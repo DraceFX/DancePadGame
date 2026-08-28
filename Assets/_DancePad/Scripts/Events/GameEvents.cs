@@ -6,6 +6,7 @@ public static class GameEvents
     public static event Action<RuntimeRhythmNote, HitResult> OnNoteJudged;
     public static event Action<float> OnAccuracyChanged;
     public static event Action<DancePadDirection> OnDancePadPressAccepted;
+    public static event Action OnMusicFinished;
 
     public static void RaiseDancePadPressed(DancePadDirection direction)
     {
@@ -25,5 +26,10 @@ public static class GameEvents
     public static void RaiseDancePadPressAccepted(DancePadDirection direction)
     {
         OnDancePadPressAccepted?.Invoke(direction);
+    }
+
+    public static void RaiseMusicFinished()
+    {
+        OnMusicFinished?.Invoke();
     }
 }

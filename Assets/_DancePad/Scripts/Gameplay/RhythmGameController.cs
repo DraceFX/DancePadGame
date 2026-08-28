@@ -1,5 +1,4 @@
 using System.Collections;
-using System.IO;
 using UnityEngine;
 
 public class RhythmGameController : MonoBehaviour
@@ -14,7 +13,15 @@ public class RhythmGameController : MonoBehaviour
 
     private RhythmChartData chart;
 
-    private void Start()
+    private bool musicFinshed;
+
+    private void Update()
+    {
+        CheckMusicFinished();
+    }
+
+    [ContextMenu("Start Game")]
+    public void StartGame()
     {
         StartCoroutine(LoadSong());
     }
@@ -64,5 +71,17 @@ public class RhythmGameController : MonoBehaviour
         double startDspTime = AudioSettings.dspTime + 0.1;
         audioSource.PlayScheduled(startDspTime);
         rhythmClock.StartAt(startDspTime);
+    }
+
+    private void CheckMusicFinished()
+    {
+        if (musicFinshed) return;
+        if (!rhythmClock.IsRunning) return;
+        if (audioSource.isPlaying) return;
+
+        musicFinshed = true;
+        rhythmClock.Stop();
+        GameEvents.RaiseMusicFinished();
+        Debug.Log("Finish playing music!");
     }
 }
