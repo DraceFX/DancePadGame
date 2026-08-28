@@ -1,0 +1,1444 @@
+{
+    "songId": "shotgun",
+    "title": "1",
+    "artist": "2",
+    "bpm": 121.0,
+    "offset": 10.0,
+    "notes": [
+        {
+            "beat": 1.5,
+            "direction": "DownRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 5.0,
+            "direction": "UpLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 5.5,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 6.5,
+            "direction": "UpLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 7.0,
+            "direction": "UpRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 8.75,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 11.0,
+            "direction": "DownLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 11.5,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 12.5,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 13.0,
+            "direction": "DownLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 14.5,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 17.0,
+            "direction": "UpLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 17.5,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 18.5,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 19.0,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 20.0,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 20.5,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 21.5,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 22.5,
+            "direction": "UpLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 23.0,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 23.75,
+            "direction": "UpRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 24.5,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 26.0,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 26.5,
+            "direction": "UpLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 27.5,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 28.5,
+            "direction": "UpLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 29.0,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 29.5,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 30.5,
+            "direction": "UpRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 32.0,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 32.75,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 33.5,
+            "direction": "UpRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 34.5,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 35.75,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 36.5,
+            "direction": "DownLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 37.25,
+            "direction": "UpLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 38.0,
+            "direction": "DownLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 39.25,
+            "direction": "UpRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 40.25,
+            "direction": "DownLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 40.5,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 42.5,
+            "direction": "DownLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 44.0,
+            "direction": "DownRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 44.5,
+            "direction": "UpRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 45.0,
+            "direction": "UpLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 45.5,
+            "direction": "DownLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 45.75,
+            "direction": "UpRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 46.5,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 47.5,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 47.75,
+            "direction": "UpLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 48.5,
+            "direction": "DownLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 49.0,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 50.5,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 52.5,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 56.0,
+            "direction": "UpRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 56.5,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 57.0,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 58.5,
+            "direction": "UpLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 60.25,
+            "direction": "DownRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 61.0,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 63.5,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 64.0,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 65.5,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 67.5,
+            "direction": "DownLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 67.75,
+            "direction": "DownRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 69.0,
+            "direction": "UpLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 70.5,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 70.75,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 71.5,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 72.0,
+            "direction": "UpLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 72.25,
+            "direction": "DownLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 73.5,
+            "direction": "DownRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 74.5,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 77.25,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 78.0,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 78.5,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 79.0,
+            "direction": "UpRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 79.5,
+            "direction": "DownRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 82.5,
+            "direction": "UpLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 83.5,
+            "direction": "DownLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 84.25,
+            "direction": "UpLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 85.0,
+            "direction": "DownLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 86.5,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 87.0,
+            "direction": "UpRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 88.0,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 88.25,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 90.0,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 90.5,
+            "direction": "DownLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 91.0,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 92.5,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 93.5,
+            "direction": "UpRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 94.5,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 95.5,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 96.0,
+            "direction": "DownRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 96.25,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 97.0,
+            "direction": "DownRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 98.0,
+            "direction": "UpLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 98.5,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 100.0,
+            "direction": "DownLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 100.5,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 101.5,
+            "direction": "UpRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 103.0,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 104.5,
+            "direction": "DownLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 107.0,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 107.5,
+            "direction": "DownRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 108.0,
+            "direction": "DownLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 110.5,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 112.5,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 113.5,
+            "direction": "UpLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 117.0,
+            "direction": "UpRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 118.5,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 119.0,
+            "direction": "DownRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 120.0,
+            "direction": "UpRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 122.0,
+            "direction": "DownLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 122.5,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 123.0,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 123.75,
+            "direction": "DownRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 124.5,
+            "direction": "UpRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 127.5,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 129.0,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 129.5,
+            "direction": "DownLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 130.5,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 131.5,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 132.0,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 132.5,
+            "direction": "UpLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 133.5,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 135.0,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 136.0,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 136.5,
+            "direction": "DownLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 137.0,
+            "direction": "UpLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 138.0,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 139.0,
+            "direction": "UpRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 139.5,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 141.0,
+            "direction": "UpRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 141.75,
+            "direction": "UpLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 142.5,
+            "direction": "DownRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 143.0,
+            "direction": "UpLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 144.0,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 145.5,
+            "direction": "DownLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 146.5,
+            "direction": "DownRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 147.0,
+            "direction": "DownLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 148.5,
+            "direction": "DownRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 151.0,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 151.5,
+            "direction": "DownRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 153.75,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 154.5,
+            "direction": "DownLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 155.0,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 156.0,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 157.0,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 157.5,
+            "direction": "UpLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 158.0,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 159.0,
+            "direction": "UpRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 160.5,
+            "direction": "DownRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 162.0,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 163.75,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 165.0,
+            "direction": "DownRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 165.5,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 166.5,
+            "direction": "DownRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 167.0,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 169.0,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 169.5,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 169.75,
+            "direction": "DownRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 170.5,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 171.0,
+            "direction": "UpLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 171.5,
+            "direction": "DownLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 172.75,
+            "direction": "UpRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 173.5,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 174.5,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 175.5,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 176.5,
+            "direction": "UpRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 177.0,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 177.75,
+            "direction": "UpRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 179.0,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 180.0,
+            "direction": "DownRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 180.5,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 184.0,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 184.25,
+            "direction": "UpRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 186.5,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 187.0,
+            "direction": "UpRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 187.5,
+            "direction": "DownRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 188.5,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 189.0,
+            "direction": "UpLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 189.5,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 190.5,
+            "direction": "DownLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 191.0,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 191.75,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 192.5,
+            "direction": "UpRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 194.5,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 195.0,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 195.5,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 196.25,
+            "direction": "UpLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 197.75,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 200.0,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 200.5,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 201.0,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 201.5,
+            "direction": "UpRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 203.0,
+            "direction": "DownRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 204.5,
+            "direction": "UpLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 205.5,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 206.0,
+            "direction": "UpRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 207.5,
+            "direction": "DownRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 209.5,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 210.5,
+            "direction": "UpRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 211.5,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 213.25,
+            "direction": "UpRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 214.5,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 215.0,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 216.25,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 217.5,
+            "direction": "DownLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 218.0,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 219.25,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 221.5,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 222.5,
+            "direction": "DownRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 223.5,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 224.5,
+            "direction": "DownRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 224.75,
+            "direction": "UpRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 226.0,
+            "direction": "DownLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 226.5,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 227.0,
+            "direction": "DownLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 229.0,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 229.5,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 230.0,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 230.5,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 232.0,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 232.5,
+            "direction": "UpRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 233.75,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 235.0,
+            "direction": "UpLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 236.5,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 237.5,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 238.0,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 241.0,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 242.5,
+            "direction": "DownLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 243.0,
+            "direction": "DownRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 244.0,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 245.0,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 245.5,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 247.0,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 247.75,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 248.5,
+            "direction": "UpRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 250.5,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 251.5,
+            "direction": "DownRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 253.0,
+            "direction": "DownLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 253.5,
+            "direction": "DownRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 254.5,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 256.0,
+            "direction": "DownRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 256.25,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 256.75,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 258.25,
+            "direction": "UpLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 258.5,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 259.0,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 260.5,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 261.0,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 265.0,
+            "direction": "DownLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 265.25,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 265.75,
+            "direction": "UpRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 266.0,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 266.5,
+            "direction": "UpRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 267.0,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 267.5,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 268.5,
+            "direction": "UpLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 269.5,
+            "direction": "UpRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 270.25,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 271.0,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 272.0,
+            "direction": "DownLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 272.5,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 273.0,
+            "direction": "DownRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 274.0,
+            "direction": "DownLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 274.5,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 275.0,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 275.5,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 277.0,
+            "direction": "DownLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 277.5,
+            "direction": "UpLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 277.75,
+            "direction": "UpRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 278.5,
+            "direction": "DownRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 279.0,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 280.0,
+            "direction": "DownLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 280.5,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 281.0,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 281.75,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 282.5,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 283.0,
+            "direction": "DownLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 283.75,
+            "direction": "UpRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 284.5,
+            "direction": "UpLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 286.0,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 286.5,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 287.0,
+            "direction": "DownRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 289.0,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 291.25,
+            "direction": "Left",
+            "type": "Tap"
+        }
+    ]
+}
