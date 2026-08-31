@@ -17,6 +17,6 @@ public class AccuracyView : MonoBehaviour
 
     private void OnAccuracyChanged(float accuracy)
     {
-        text.text = $"{accuracy:F2}%";
+        text.text = $"{accuracy}%";
     }
 }

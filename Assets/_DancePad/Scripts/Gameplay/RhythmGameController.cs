@@ -13,16 +13,30 @@ public class RhythmGameController : MonoBehaviour
 
     private RhythmChartData chart;
 
-    private bool musicFinshed;
+    private bool musicFinished;
 
     private void Update()
     {
         CheckMusicFinished();
     }
 
+    private void OnEnable()
+    {
+        GameEvents.OnStartPlay += StartGame;
+        GameEvents.OnSelectChart += (o) => songId = o;
+    }
+
+    private void OnDisable()
+    {
+        GameEvents.OnStartPlay -= StartGame;
+        GameEvents.OnSelectChart -= (o) => songId = o;
+    }
+
     [ContextMenu("Start Game")]
     public void StartGame()
     {
+        audioSource.Stop();
+        musicFinished = false;
         StartCoroutine(LoadSong());
     }
 
@@ -62,6 +76,7 @@ public class RhythmGameController : MonoBehaviour
         }
 
         audioSource.clip = clip;
+        musicFinished = false;
         rhythmManager.Initialize(chart);
         StartSong();
     }
@@ -75,11 +90,18 @@ public class RhythmGameController : MonoBehaviour
 
     private void CheckMusicFinished()
     {
-        if (musicFinshed) return;
+        if (musicFinished) return;
         if (!rhythmClock.IsRunning) return;
+
+        // Ждём, пока клип реально начнёт воспроизводиться
+        if (audioSource.time <= 0f) return;
+
+        // Если музыка ещё играет — выходим
         if (audioSource.isPlaying) return;
 
-        musicFinshed = true;
+        // Музыка завершилась
+        musicFinished = true;
+        audioSource.Stop(); // гарантируем остановку
         rhythmClock.Stop();
         GameEvents.RaiseMusicFinished();
         Debug.Log("Finish playing music!");

@@ -1,3 +1,4 @@
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -16,7 +17,7 @@ public class RhythmNoteView : MonoBehaviour
     private Vector3 spawnPosition;
     private Vector3 targetPosition;
 
-    private bool initialized;
+    private Tweener moveTween;
 
     public void Initialize(RuntimeRhythmNote note, RhythmClock clock, RectTransform spawnPoint, RectTransform targetPoint, double spawnLeadTime)
     {
@@ -32,20 +33,17 @@ public class RhythmNoteView : MonoBehaviour
 
         transform.position = spawnPosition;
 
-        initialized = true;
-    }
-
-    private void Update()
-    {
-        if (!initialized) return;
-
         double currentTime = clock.SongTime;
         double spawnTime = note.Time - spawnLeadTime;
-        double progress = (currentTime - spawnTime) / spawnLeadTime;
+        float delay = Mathf.Max(0f, (float)(spawnTime - currentTime));
 
-        progress = Mathf.Clamp01((float)progress);
-
-        transform.position = Vector3.Lerp(spawnPosition, targetPosition, (float)progress);
+        moveTween = transform.DOMove(targetPosition, (float)spawnLeadTime)
+            .SetDelay(delay)
+            .SetEase(Ease.Linear)
+            .OnComplete(() =>
+            {
+                // Если нота дошла до цели, но не была обработана — это можно считать промахом (здесь просто ничего не делаем)
+            });
     }
 
     public void SetDirection(DancePadDirection direction)
@@ -55,22 +53,31 @@ public class RhythmNoteView : MonoBehaviour
 
     public void OnHit(HitResult result)
     {
-        initialized = false;
+        KillTween();
     }
 
     public void OnMiss()
     {
-        initialized = false;
+        KillTween();
     }
 
     public void ResetView()
     {
         note = null;
-        initialized = false;
+        KillTween();
 
         transform.localScale = Vector3.one;
         transform.localRotation = Quaternion.identity;
 
         gameObject.SetActive(false);
+    }
+
+    private void KillTween()
+    {
+        if (moveTween != null)
+        {
+            moveTween.Kill();
+            moveTween = null;
+        }
     }
 }

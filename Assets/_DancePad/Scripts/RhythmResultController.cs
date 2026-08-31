@@ -1,9 +1,11 @@
+using TMPro;
 using UnityEngine;
 
 public class RhythmResultController : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] private AccuracyManager accuracyManager;
+    [SerializeField] private TMP_Text[] results;
 
     [Header("Result")]
     [SerializeField, Range(0f, 100f)] private float winAccuracy = 65f;
@@ -17,12 +19,22 @@ public class RhythmResultController : MonoBehaviour
     private void OnEnable()
     {
         GameEvents.OnMusicFinished += OnMusicFinished;
+        GameEvents.OnStartPlay += ResetResult;
     }
 
     private void OnDisable()
     {
         GameEvents.OnMusicFinished -= OnMusicFinished;
+        GameEvents.OnStartPlay -= ResetResult;
     }
+
+    private void ResetResult()
+    {
+        resultShow = false;
+        if (winObject != null) winObject.SetActive(false);
+        if (loseObject != null) loseObject.SetActive(false);
+    }
+
 
     private void OnMusicFinished()
     {
@@ -30,6 +42,11 @@ public class RhythmResultController : MonoBehaviour
 
         resultShow = true;
         float accuracy = accuracyManager.Accuracy;
+        foreach (var text in results)
+        {
+            text.text = $"{accuracy}%";
+        }
+
         if (accuracy >= winAccuracy)
         {
             ShowWin();
@@ -53,6 +70,7 @@ public class RhythmResultController : MonoBehaviour
         }
 
         Debug.Log("WIN!");
+        GameEvents.RaiseWiinGame();
     }
 
     private void ShowLose()
@@ -68,5 +86,6 @@ public class RhythmResultController : MonoBehaviour
         }
 
         Debug.Log("LOSE!");
+        GameEvents.RaiseLoseGame();
     }
 }

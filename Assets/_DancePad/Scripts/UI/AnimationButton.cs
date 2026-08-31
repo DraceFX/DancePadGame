@@ -1,4 +1,5 @@
 using System.Collections;
+using DG.Tweening;
 using UnityEngine;
 
 public class AnimationButton : MonoBehaviour
@@ -11,7 +12,7 @@ public class AnimationButton : MonoBehaviour
 
     private RectTransform rectTransform;
     private Vector3 originalScale;
-    private Coroutine animationCoroutine;
+    private Sequence sequence;
 
     private void Awake()
     {
@@ -27,45 +28,38 @@ public class AnimationButton : MonoBehaviour
     private void OnDisable()
     {
         GameEvents.OnDancePadPressAccepted -= HandleDancePadPressed;
+        if (sequence != null)
+        {
+            sequence.Kill();
+            sequence = null;
+        }
     }
 
     private void HandleDancePadPressed(DancePadDirection pressedDirection)
     {
         if (pressedDirection == direction)
         {
-            if (animationCoroutine != null)
+            if (sequence != null)
             {
-                StopCoroutine(animationCoroutine);
+                sequence.Kill();
+                sequence = null;
             }
-            animationCoroutine = StartCoroutine(AnimateHit());
+
+            rectTransform.localScale = originalScale;
+            Vector3 targetScale = originalScale * punchScale;
+
+            sequence = DOTween.Sequence();
+
+            sequence.Append(rectTransform.DOScale(targetScale, duration).SetEase(animationCurve));
+            sequence.Append(rectTransform.DOScale(originalScale, duration).SetEase(animationCurve));
+
+            sequence.OnComplete(() =>
+            {
+                if (sequence != null && !sequence.IsActive())
+                {
+                    sequence = null;
+                }
+            });
         }
-    }
-
-
-    private IEnumerator AnimateHit()
-    {
-        rectTransform.localScale = originalScale;
-        Vector3 targetScale = originalScale * punchScale;
-
-        // Сжатие
-        yield return AnimateScale(rectTransform, originalScale, targetScale, duration, animationCurve);
-        // Возврат
-        yield return AnimateScale(rectTransform, targetScale, originalScale, duration, animationCurve);
-
-        rectTransform.localScale = originalScale;
-    }
-
-    private IEnumerator AnimateScale(RectTransform rect, Vector3 from, Vector3 to, float time, AnimationCurve curve)
-    {
-        float elapsed = 0f;
-        while (elapsed < time)
-        {
-            elapsed += Time.deltaTime;
-            float t = Mathf.Clamp01(elapsed / time);
-            float curveValue = curve.Evaluate(t);
-            rect.localScale = Vector3.LerpUnclamped(from, to, curveValue);
-            yield return null;
-        }
-        rect.localScale = to;
     }
 }

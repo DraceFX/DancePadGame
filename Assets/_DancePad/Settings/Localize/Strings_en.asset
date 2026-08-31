@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Strings_en
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 7dd1b609af4b6e24890887ba6613a89b, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 203400249344
+    m_Localized: Rules
+    m_Metadata:
+      m_Items: []
+  - m_Id: 245079048192
+    m_Localized: 'sladhaskjldha
+
+      sjkdhaskdhkjashdkjas'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 357939380224
+    m_Localized: Continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 432837066752
+    m_Localized: Start
+    m_Metadata:
+      m_Items: []
+  - m_Id: 650596941824
+    m_Localized: You Win
+    m_Metadata:
+      m_Items: []
+  - m_Id: 673514618880
+    m_Localized: You Lose
+    m_Metadata:
+      m_Items: []
+  - m_Id: 708407033856
+    m_Localized: Complete
+    m_Metadata:
+      m_Items: []
+  - m_Id: 868700749824
+    m_Localized: Accuracy
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

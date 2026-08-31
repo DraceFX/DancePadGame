@@ -38,6 +38,19 @@ public class ChartGenerator : MonoBehaviour
 
     [Header("Generation")]
     [SerializeField] private bool generateOnStart = false;
+    [SerializeField]
+    private DancePadDirection[] directions =
+        {
+            DancePadDirection.Up,
+            DancePadDirection.Down,
+            DancePadDirection.Left,
+            DancePadDirection.Right,
+
+            DancePadDirection.UpLeft,
+            DancePadDirection.UpRight,
+            DancePadDirection.DownLeft,
+            DancePadDirection.DownRight
+        };
 
     [Header("Output")]
     [SerializeField] private bool overwriteExisting = true;
@@ -349,19 +362,6 @@ public class ChartGenerator : MonoBehaviour
 
     private DancePadDirection GetNextDirection(DancePadDirection previous)
     {
-        DancePadDirection[] directions =
-        {
-            DancePadDirection.Up,
-            DancePadDirection.Down,
-            DancePadDirection.Left,
-            DancePadDirection.Right,
-
-            DancePadDirection.UpLeft,
-            DancePadDirection.UpRight,
-            DancePadDirection.DownLeft,
-            DancePadDirection.DownRight
-        };
-
         DancePadDirection result;
 
         do

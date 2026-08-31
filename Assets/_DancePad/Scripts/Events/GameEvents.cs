@@ -7,6 +7,10 @@ public static class GameEvents
     public static event Action<float> OnAccuracyChanged;
     public static event Action<DancePadDirection> OnDancePadPressAccepted;
     public static event Action OnMusicFinished;
+    public static event Action OnStartPlay;
+    public static event Action<string> OnSelectChart;
+    public static event Action OnWinGame;
+    public static event Action OnLoseGame;
 
     public static void RaiseDancePadPressed(DancePadDirection direction)
     {
@@ -31,5 +35,25 @@ public static class GameEvents
     public static void RaiseMusicFinished()
     {
         OnMusicFinished?.Invoke();
+    }
+
+    public static void RaiseStartPlay()
+    {
+        OnStartPlay?.Invoke();
+    }
+
+    public static void RiseSelectChart(string chartId)
+    {
+        OnSelectChart?.Invoke(chartId);
+    }
+
+    public static void RaiseWiinGame()
+    {
+        OnWinGame?.Invoke();
+    }
+
+    public static void RaiseLoseGame()
+    {
+        OnLoseGame?.Invoke();
     }
 }
