@@ -60,6 +60,7 @@ public class RhythmNoteSpawner : MonoBehaviour
         if (view == null) return null;
 
         view.Initialize(note, clock, lane.SpawnPoint, lane.TargetPoint, spawnLeadTime);
+        view.SetDirection(note.Direction);
 
         return view;
     }

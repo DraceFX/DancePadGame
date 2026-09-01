@@ -89,6 +89,14 @@ public class RhythmManager : MonoBehaviour
 
         note.View = view;
         note.State = RhythmNoteState.Spawned;
+
+        view.AnimationCompleted += OnNoteAnimationCompleted;
+
+        void OnNoteAnimationCompleted(RhythmNoteView completedView)
+        {
+            completedView.AnimationCompleted -= OnNoteAnimationCompleted; // отписка
+            ReturnNoteToPool(note, completedView);
+        }
     }
 
     private void OnEnable()
@@ -160,25 +168,24 @@ public class RhythmManager : MonoBehaviour
             note.State = RhythmNoteState.Missed;
             note.View?.OnMiss();
 
-            ReturnNoteToPool(note);
+            // ReturnNoteToPool(note);
         }
         else
         {
             note.State = RhythmNoteState.Hit;
             note.View?.OnHit(result);
 
-            ReturnNoteToPool(note);
+            // ReturnNoteToPool(note);
         }
 
         accuracyManager.RegisterResult(result);
         GameEvents.RaiseNoteJudged(note, result);
     }
 
-    private void ReturnNoteToPool(RuntimeRhythmNote note)
+    private void ReturnNoteToPool(RuntimeRhythmNote note, RhythmNoteView view)
     {
-        if (note.View == null) return;
+        if (view == null) return;
 
-        RhythmNoteView view = note.View;
         note.View = null;
         noteSpawner.ReturnToPool(view);
     }
