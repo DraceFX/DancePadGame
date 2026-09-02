@@ -12,7 +12,7 @@ public class RhythmNoteView : MonoBehaviour
     [Header("Hit Effect Settings")]
     [SerializeField] private float hitPunchScale = 1.2f;
     [SerializeField] private float hitDuration = 0.2f;
-    [SerializeField] private Color hitColor = Color.green;
+    [SerializeField] private Color hitColor = Color.cyan;
 
     [Header("Miss Effect Settings")]
     [SerializeField] private float missShakeStrength = 10f;
@@ -81,36 +81,31 @@ public class RhythmNoteView : MonoBehaviour
 
     public void OnHit(HitResult result)
     {
-        // KillTween();
+        if (note == null) return;
+        note = null;
+
         KillMoveTween();
         KillEffectTween();
 
-        float punch = hitPunchScale;
-        float duration = hitDuration;
         Color color = hitColor;
-
         if (result == HitResult.Perfect)
         {
-            punch = 1.4f;
-            duration = 0.25f;
             color = Color.cyan;
         }
         else if (result == HitResult.Good)
         {
-            punch = 1.2f;
-            duration = 0.2f;
             color = Color.green;
         }
 
         effectSequence = DOTween.Sequence();
-        effectSequence.Append(transform.DOPunchScale(Vector3.one * punch, duration, 10, 1));
-        effectSequence.Join(image.DOColor(color, duration * 0.5f));
-        effectSequence.Join(image.DOFade(0f, duration * 0.5f));
+        effectSequence.Append(transform.DOPunchScale(Vector3.one * hitPunchScale, hitDuration, 10, 1));
+        effectSequence.Join(image.DOColor(color, hitDuration * 0.5f));
+        effectSequence.Join(image.DOFade(0f, hitDuration * 0.5f));
 
         if (backgroundImage != null)
         {
-            effectSequence.Join(backgroundImage.DOColor(color, duration * 0.5f));
-            effectSequence.Join(backgroundImage.DOFade(0f, duration * 0.5f));
+            effectSequence.Join(backgroundImage.DOColor(color, hitDuration * 0.5f));
+            effectSequence.Join(backgroundImage.DOFade(0f, hitDuration * 0.5f));
         }
 
         effectSequence.OnComplete(() =>
@@ -122,7 +117,9 @@ public class RhythmNoteView : MonoBehaviour
 
     public void OnMiss()
     {
-        // KillTween();
+        if (note == null) return;
+        note = null;
+
         KillMoveTween();
         KillEffectTween();
 
@@ -164,17 +161,6 @@ public class RhythmNoteView : MonoBehaviour
         }
 
         gameObject.SetActive(false);
-    }
-
-    private void KillTween()
-    {
-        if (moveTween != null)
-        {
-            moveTween.Kill();
-            moveTween = null;
-        }
-
-        DOTween.Kill(transform);
     }
 
     private void KillMoveTween()

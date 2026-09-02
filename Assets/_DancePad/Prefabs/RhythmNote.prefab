@@ -203,7 +203,7 @@ MonoBehaviour:
   image: {fileID: 2283177502469515860}
   backgroundImage: {fileID: 8835353027712760104}
   hitPunchScale: 1.5
-  hitDuration: 1
+  hitDuration: 0.25
   hitColor: {r: 0, g: 1, b: 0, a: 1}
   missShakeStrength: 10
   missDuration: 1.3

@@ -1,4 +1,3 @@
-using System.Collections;
 using DG.Tweening;
 using UnityEngine;
 
@@ -8,8 +7,8 @@ public class AnimationButton : MonoBehaviour
 
     [SerializeField] private float punchScale = 0.8f;
     [SerializeField] private float duration = 0.15f;
-    [SerializeField] private AnimationCurve animationCurve = AnimationCurve.EaseInOut(0, 0, 1, 1);
-
+    [SerializeField] private Ease pressCurve = Ease.OutExpo;
+    [SerializeField] private Ease releaseCurve = Ease.OutBack;
     private RectTransform rectTransform;
     private Vector3 originalScale;
     private Sequence sequence;
@@ -50,8 +49,8 @@ public class AnimationButton : MonoBehaviour
 
             sequence = DOTween.Sequence();
 
-            sequence.Append(rectTransform.DOScale(targetScale, duration).SetEase(animationCurve));
-            sequence.Append(rectTransform.DOScale(originalScale, duration).SetEase(animationCurve));
+            sequence.Append(rectTransform.DOScale(targetScale, duration).SetEase(pressCurve));
+            sequence.Append(rectTransform.DOScale(originalScale, duration).SetEase(releaseCurve));
 
             sequence.OnComplete(() =>
             {
