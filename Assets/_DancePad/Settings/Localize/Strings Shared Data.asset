@@ -15,36 +15,124 @@ MonoBehaviour:
   m_TableCollectionName: Strings
   m_TableCollectionNameGuidString: 7dd1b609af4b6e24890887ba6613a89b
   m_Entries:
-  - m_Id: 203400249344
+  - m_Id: 846418765512704
+    m_Key: SelectTrack
+    m_Metadata:
+      m_Items: []
+  - m_Id: 846544946954240
+    m_Key: SelectSong
+    m_Metadata:
+      m_Items: []
+  - m_Id: 846950011863040
+    m_Key: SelectDifficulty
+    m_Metadata:
+      m_Items: []
+  - m_Id: 847096422432768
+    m_Key: ToRules
+    m_Metadata:
+      m_Items: []
+  - m_Id: 847219210682368
+    m_Key: EasyDif
+    m_Metadata:
+      m_Items: []
+  - m_Id: 847337460695040
+    m_Key: MediumDif
+    m_Metadata:
+      m_Items: []
+  - m_Id: 847440443441152
+    m_Key: HardDif
+    m_Metadata:
+      m_Items: []
+  - m_Id: 847588896636928
+    m_Key: EasyDifDesc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 847842035466240
+    m_Key: MediumDifDesc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 848178649333760
+    m_Key: HardDifDesc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 848407909990400
+    m_Key: SelectDiff2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 848718540144640
+    m_Key: ChoosTempo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 848963873374208
+    m_Key: HowToPlay
+    m_Metadata:
+      m_Items: []
+  - m_Id: 849057502822400
     m_Key: Rules
     m_Metadata:
       m_Items: []
-  - m_Id: 245079048192
-    m_Key: Rules_Description
+  - m_Id: 849424290512896
+    m_Key: Target
     m_Metadata:
       m_Items: []
-  - m_Id: 357939380224
-    m_Key: Continue
+  - m_Id: 849559191912448
+    m_Key: TargetDesc
     m_Metadata:
       m_Items: []
-  - m_Id: 432837066752
-    m_Key: Start
+  - m_Id: 849834023682048
+    m_Key: Understand
     m_Metadata:
       m_Items: []
-  - m_Id: 650596941824
+  - m_Id: 849983978438656
+    m_Key: ReadyToPlay
+    m_Metadata:
+      m_Items: []
+  - m_Id: 850167831560192
+    m_Key: Play
+    m_Metadata:
+      m_Items: []
+  - m_Id: 850310878298112
     m_Key: Win
     m_Metadata:
       m_Items: []
-  - m_Id: 673514618880
-    m_Key: Lose
+  - m_Id: 850396966387712
+    m_Key: Activate
     m_Metadata:
       m_Items: []
-  - m_Id: 708407033856
+  - m_Id: 850546057117696
+    m_Key: ClawActivate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 850686692130816
     m_Key: Complete
     m_Metadata:
       m_Items: []
-  - m_Id: 868700749824
-    m_Key: Accuracy
+  - m_Id: 850818674294784
+    m_Key: Stand
+    m_Metadata:
+      m_Items: []
+  - m_Id: 850997066432512
+    m_Key: AndLook
+    m_Metadata:
+      m_Items: []
+  - m_Id: 851141665062912
+    m_Key: Almost
+    m_Metadata:
+      m_Items: []
+  - m_Id: 851326357045248
+    m_Key: ToWin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 851479528833024
+    m_Key: TryAgain
+    m_Metadata:
+      m_Items: []
+  - m_Id: 855477384216576
+    m_Key: IsGaming
+    m_Metadata:
+      m_Items: []
+  - m_Id: 855589422465024
+    m_Key: LookAtDisplay
     m_Metadata:
       m_Items: []
   m_Metadata:

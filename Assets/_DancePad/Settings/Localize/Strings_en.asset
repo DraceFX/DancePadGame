@@ -18,38 +18,129 @@ MonoBehaviour:
   m_Metadata:
     m_Items: []
   m_TableData:
-  - m_Id: 203400249344
-    m_Localized: Rules
+  - m_Id: 846418765512704
+    m_Localized: Select a track
     m_Metadata:
       m_Items: []
-  - m_Id: 245079048192
-    m_Localized: 'sladhaskjldha
+  - m_Id: 846544946954240
+    m_Localized: Select a song from 5 tracks
+    m_Metadata:
+      m_Items: []
+  - m_Id: 846950011863040
+    m_Localized: Select difficulty
+    m_Metadata:
+      m_Items: []
+  - m_Id: 847096422432768
+    m_Localized: To the rules
+    m_Metadata:
+      m_Items: []
+  - m_Id: 847219210682368
+    m_Localized: Easy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 847337460695040
+    m_Localized: Medium
+    m_Metadata:
+      m_Items: []
+  - m_Id: 847440443441152
+    m_Localized: Hard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 847588896636928
+    m_Localized: Easy pace, basic arrows
+    m_Metadata:
+      m_Items: []
+  - m_Id: 847842035466240
+    m_Localized: Classic vending machine tempo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 848178649333760
+    m_Localized: Maximum combo speed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 848407909990400
+    m_Localized: Select difficulty
+    m_Metadata:
+      m_Items: []
+  - m_Id: 848718540144640
+    m_Localized: Choose a tempo for the platform
+    m_Metadata:
+      m_Items: []
+  - m_Id: 848963873374208
+    m_Localized: How to play
+    m_Metadata:
+      m_Items: []
+  - m_Id: 849057502822400
+    m_Localized: '1. Stand on the dance platform
 
-      sjkdhaskdhkjashdkjas'
+      2. Look at the overhead TV
+      screen
+
+      3. Step on the arrows precisely in time to the music'
     m_Metadata:
       m_Items: []
-  - m_Id: 357939380224
-    m_Localized: Continue
+  - m_Id: 849559191912448
+    m_Localized: Achieve 65% or more accuracy to unlock the Claw Sandwich!
     m_Metadata:
       m_Items: []
-  - m_Id: 432837066752
-    m_Localized: Start
+  - m_Id: 849424290512896
+    m_Localized: 'Goal - Hunger Cheat Code:'
     m_Metadata:
       m_Items: []
-  - m_Id: 650596941824
-    m_Localized: You Win
+  - m_Id: 849834023682048
+    m_Localized: Okay, next
     m_Metadata:
       m_Items: []
-  - m_Id: 673514618880
-    m_Localized: You Lose
+  - m_Id: 849983978438656
+    m_Localized: Ready to play?
     m_Metadata:
       m_Items: []
-  - m_Id: 708407033856
+  - m_Id: 850167831560192
+    m_Localized: Start the game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 850310878298112
+    m_Localized: Win!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 850396966387712
+    m_Localized: Cheat code activated!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 850546057117696
+    m_Localized: Claw activated - grab the sandwich!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 850686692130816
     m_Localized: Complete
     m_Metadata:
       m_Items: []
-  - m_Id: 868700749824
-    m_Localized: Accuracy
+  - m_Id: 850818674294784
+    m_Localized: Stand on the platform
+    m_Metadata:
+      m_Items: []
+  - m_Id: 850997066432512
+    m_Localized: And look up!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 851141665062912
+    m_Localized: Almost!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 851326357045248
+    m_Localized: "To win, \u2265 65% was needed"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 851479528833024
+    m_Localized: Try again
+    m_Metadata:
+      m_Items: []
+  - m_Id: 855477384216576
+    m_Localized: The game is on
+    m_Metadata:
+      m_Items: []
+  - m_Id: 855589422465024
+    m_Localized: Look at the top TV screen!
     m_Metadata:
       m_Items: []
   references:
