@@ -302,9 +302,11 @@ public class VibeArcadeGameUI : MonoBehaviour
         ShowPanel(panelSongs);
     }
 
+    private bool isEnglish;
     private void ApplyLanguageLocalization(string lang)
     {
         bool isEn = lang.ToLowerInvariant() == "en";
+        isEnglish = isEn;
 
         if (tabletRoot != null)
         {
@@ -449,7 +451,7 @@ public class VibeArcadeGameUI : MonoBehaviour
         yield return new WaitForSeconds(1.0f);
         if (countdownLabel != null) countdownLabel.text = "1";
         yield return new WaitForSeconds(1.0f);
-        if (countdownLabel != null) countdownLabel.text = "GO!";
+        if (countdownLabel != null) countdownLabel.text = isEnglish ? "GO!" : "ВПЕРЁД!";
         yield return new WaitForSeconds(0.5f);
 
         ShowPanel(panelGameplay);
