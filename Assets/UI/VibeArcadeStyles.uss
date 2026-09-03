@@ -1,0 +1,274 @@
+:root {
+    --neon-pink: #ff007f;
+    --neon-cyan: #00f0ff;
+    --neon-yellow: #ffe600;
+    --neon-green: #00ff66;
+    --bg-deep: #0e061e;
+    --bg-card: rgba(22, 11, 45, 0.92);
+    
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-deep);
+    font-size: 28px;
+    color: #ffffff;
+    -unity-font-definition: url("project:/Assets/Art/Fonts/RussoOne-Regular.ttf");
+}
+
+/* Outer chassis matching the arcade cabinet */
+.screen-wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 24px;
+    background-color: #0a0217;
+}
+
+.screen-container {
+    width: 100%;
+    height: 100%;
+    border-radius: 48px;
+    border-width: 6px;
+    border-color: var(--neon-pink);
+    background-image: url("project:/Assets/Art/Sprites/bg_rayburst_portrait.png");
+    -unity-background-scale-mode: stretch-to-fill;
+    padding: 30px;
+    flex-direction: column;
+}
+
+/* Header Marquee */
+.header-row {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.corner-icon {
+    width: 80px;
+    height: 80px;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.marquee-sign {
+    width: 440px;
+    height: 130px;
+    background-color: rgba(20, 5, 42, 0.95);
+    border-radius: 28px;
+    border-width: 4px;
+    border-color: var(--neon-pink);
+    align-items: center;
+    justify-content: center;
+}
+
+.brand-title {
+    font-size: 68px;
+    color: #ffffff;
+    -unity-text-align: middle-center;
+    letter-spacing: 6px;
+}
+
+.brand-slogan {
+    font-size: 28px;
+    color: var(--neon-cyan);
+    align-self: center;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+
+/* Panel Containers */
+.screen-panel {
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.panel-hidden {
+    display: none;
+}
+
+/* Typography */
+.panel-heading {
+    font-size: 46px;
+    color: #ffffff;
+    -unity-text-align: middle-center;
+    margin-bottom: 8px;
+}
+
+.panel-subheading {
+    font-size: 28px;
+    color: var(--neon-cyan);
+    -unity-text-align: middle-center;
+    margin-bottom: 50px;
+}
+
+/* Interactive Cards */
+.arcade-card {
+    height: 190px;
+    border-radius: 30px;
+    border-width: 4px;
+    background-color: var(--bg-card);
+    flex-direction: row;
+    align-items: center;
+    padding: 0 35px;
+    margin-bottom: 25px;
+    transition-duration: 0.15s;
+    transition-property: scale, background-color;
+}
+
+.arcade-card:hover {
+    scale: 1.02 1.02;
+    background-color: rgba(35, 18, 70, 0.96);
+}
+
+.arcade-card:active {
+    scale: 0.98 0.98;
+    background-color: rgba(50, 25, 95, 0.98);
+}
+
+.card-cyan {
+    border-color: var(--neon-cyan);
+}
+
+.card-pink {
+    border-color: var(--neon-pink);
+}
+
+.card-yellow {
+    border-color: var(--neon-yellow);
+}
+
+.card-green {
+    border-color: var(--neon-green);
+}
+
+/* Badge Icon */
+.badge-box {
+    width: 84px;
+    height: 84px;
+    border-radius: 20px;
+    border-width: 3px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 25px;
+}
+
+.badge-text {
+    font-size: 38px;
+    color: #ffffff;
+}
+
+/* Card Text Group */
+.card-content {
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-title {
+    font-size: 46px;
+    color: #ffffff;
+    margin-bottom: 6px;
+}
+
+.card-subtitle {
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.arrow-icon {
+    width: 60px;
+    height: 60px;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+/* Action Buttons */
+.action-btn {
+    height: 110px;
+    border-radius: 26px;
+    border-width: 4px;
+    border-color: var(--neon-pink);
+    background-color: rgba(30, 8, 55, 0.95);
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    transition-duration: 0.12s;
+}
+
+.action-btn:hover {
+    scale: 1.02 1.02;
+    background-color: rgba(50, 15, 90, 0.98);
+}
+
+.action-btn:active {
+    scale: 0.97 0.97;
+    background-color: rgba(255, 0, 127, 0.4);
+}
+
+.action-btn-text {
+    font-size: 38px;
+    color: #ffffff;
+}
+
+/* Big Status & Scores */
+.big-score-text {
+    font-size: 140px;
+    color: var(--neon-green);
+    -unity-text-align: middle-center;
+    margin: 30px 0;
+}
+
+.rules-box {
+    background-color: rgba(22, 11, 45, 0.9);
+    border-radius: 28px;
+    border-width: 3px;
+    border-color: var(--neon-cyan);
+    padding: 35px;
+    margin-bottom: 25px;
+}
+
+.rules-step {
+    font-size: 30px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.goal-highlight {
+    background-color: rgba(45, 30, 10, 0.9);
+    border-radius: 20px;
+    border-width: 3px;
+    border-color: var(--neon-yellow);
+    padding: 20px;
+    margin-top: 15px;
+}
+
+.goal-title {
+    font-size: 32px;
+    color: var(--neon-yellow);
+    margin-bottom: 8px;
+}
+
+.goal-text {
+    font-size: 28px;
+    color: #ffffff;
+}
+
+/* Dynamic Song ScrollView */
+.songs-scroll-view {
+    flex-grow: 1;
+    max-height: 1050px;
+    margin-bottom: 20px;
+}
+
+.unity-scroller--vertical {
+    width: 8px;
+}
+
+.unity-base-slider__dragger {
+    background-color: var(--neon-pink);
+    border-radius: 4px;
+}
+
+.unity-base-slider__tracker {
+    background-color: rgba(255, 255, 255, 0.05);
+}

@@ -1,0 +1,163 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project:/Assets/UI/VibeArcadeStyles.uss" />
+    <ui:VisualElement name="screen-wrapper" class="screen-wrapper">
+        <ui:VisualElement name="screen-container" class="screen-container">
+            <!-- Header Marquee -->
+            <ui:VisualElement class="header-row">
+                <ui:Image name="icon-burger" class="corner-icon" style="background-image: url(&apos;project:/Assets/Art/Vectors/icon_burger_neon.svg&apos;);" />
+                <ui:VisualElement class="marquee-sign">
+                    <ui:Label name="brand-title" text="ВАЙБ" class="brand-title" />
+                </ui:VisualElement>
+                <ui:Image name="icon-cheese" class="corner-icon" style="background-image: url(&apos;project:/Assets/Art/Vectors/icon_cheese_neon.svg&apos;);" />
+            </ui:VisualElement>
+            
+            <ui:Label name="brand-slogan" text="ЧИТ-КОД ОТ ГОЛОДА" class="brand-slogan" />
+
+            <!-- PANEL 1: LANGUAGE SELECTION -->
+            <ui:VisualElement name="panel-language" class="screen-panel">
+                <ui:Label name="lang-heading" text="ВЫБЕРИТЕ ЯЗЫК" class="panel-heading" />
+                <ui:Label name="lang-subheading" text="КОСНИТЕСЬ ЭКРАНА ДЛЯ НАЧАЛА" class="panel-subheading" />
+
+                <!-- RU Button Card -->
+                <ui:Button name="btn-lang-ru" class="arcade-card card-cyan">
+                    <ui:Image class="badge-box" style="background-image: url(&apos;project:/Assets/Art/Vectors/badge_ru.svg&apos;);" />
+                    <ui:VisualElement class="card-content">
+                        <ui:Label text="РУССКИЙ" class="card-title" />
+                        <ui:Label text="Играть на русском" class="card-subtitle" />
+                    </ui:VisualElement>
+                    <ui:Image class="arrow-icon" style="background-image: url(&apos;project:/Assets/Art/Vectors/icon_play_arrow.svg&apos;);" />
+                </ui:Button>
+
+                <!-- EN Button Card -->
+                <ui:Button name="btn-lang-en" class="arcade-card card-pink">
+                    <ui:Image class="badge-box" style="background-image: url(&apos;project:/Assets/Art/Vectors/badge_en.svg&apos;);" />
+                    <ui:VisualElement class="card-content">
+                        <ui:Label text="ENGLISH" class="card-title" />
+                        <ui:Label text="Play in English" class="card-subtitle" />
+                    </ui:VisualElement>
+                    <ui:Image class="arrow-icon" style="background-image: url(&apos;project:/Assets/Art/Vectors/icon_play_arrow.svg&apos;);" />
+                </ui:Button>
+            </ui:VisualElement>
+
+            <!-- PANEL 2: SONGS SELECTION (DYNAMICALLY POPULATED) -->
+            <ui:VisualElement name="panel-songs" class="screen-panel panel-hidden">
+                <ui:Label name="songs-heading" text="ВЫБОР ТРЕКА" class="panel-heading" />
+                <ui:Label name="songs-subheading" text="ВЫБЕРИТЕ ПЕСНЮ ДЛЯ ИГРЫ" class="panel-subheading" style="margin-bottom: 25px;" />
+
+                <ui:ScrollView name="songs-scroll-view" class="songs-scroll-view">
+                    <!-- Song cards generated dynamically from StreamingAssets/Songs/ -->
+                </ui:ScrollView>
+
+                <ui:Button name="btn-to-diff" class="action-btn" style="margin-top: 10px;">
+                    <ui:Label name="btn-to-diff-text" text="ПРОДОЛЖИТЬ ▶" class="action-btn-text" />
+                </ui:Button>
+            </ui:VisualElement>
+
+            <!-- PANEL 3: DIFFICULTY -->
+            <ui:VisualElement name="panel-difficulty" class="screen-panel panel-hidden">
+                <ui:Label name="diff-heading" text="ВЫБОР СЛОЖНОСТИ" class="panel-heading" />
+                <ui:Label name="diff-subheading" text="ВЫБЕРИТЕ ТЕМП ДЛЯ ПЛАТФОРМЫ" class="panel-subheading" />
+
+                <ui:Button name="diff-easy" class="arcade-card card-green">
+                    <ui:VisualElement class="card-content">
+                        <ui:Label name="diff-easy-title" text="EASY (ЛЁГКИЙ)" class="card-title" />
+                        <ui:Label name="diff-easy-sub" text="Спокойный темп, базовые стрелки" class="card-subtitle" />
+                    </ui:VisualElement>
+                    <ui:Image class="arrow-icon" style="background-image: url(&apos;project:/Assets/Art/Vectors/icon_play_arrow.svg&apos;);" />
+                </ui:Button>
+
+                <ui:Button name="diff-med" class="arcade-card card-cyan">
+                    <ui:VisualElement class="card-content">
+                        <ui:Label name="diff-med-title" text="MEDIUM (СРЕДНИЙ)" class="card-title" />
+                        <ui:Label name="diff-med-sub" text="Классический темп автомата" class="card-subtitle" />
+                    </ui:VisualElement>
+                    <ui:Image class="arrow-icon" style="background-image: url(&apos;project:/Assets/Art/Vectors/icon_play_arrow.svg&apos;);" />
+                </ui:Button>
+
+                <ui:Button name="diff-hard" class="arcade-card card-pink">
+                    <ui:VisualElement class="card-content">
+                        <ui:Label name="diff-hard-title" text="HARD (ХАРДКОР)" class="card-title" />
+                        <ui:Label name="diff-hard-sub" text="Максимальная скорость комбо" class="card-subtitle" />
+                    </ui:VisualElement>
+                    <ui:Image class="arrow-icon" style="background-image: url(&apos;project:/Assets/Art/Vectors/icon_play_arrow.svg&apos;);" />
+                </ui:Button>
+
+                <ui:Button name="btn-to-rules" class="action-btn">
+                    <ui:Label name="btn-to-rules-text" text="К ПРАВИЛАМ ▶" class="action-btn-text" />
+                </ui:Button>
+            </ui:VisualElement>
+
+            <!-- PANEL 4: RULES -->
+            <ui:VisualElement name="panel-rules" class="screen-panel panel-hidden">
+                <ui:Label name="rules-heading" text="КАК ИГРАТЬ" class="panel-heading" />
+                <ui:VisualElement class="rules-box">
+                    <ui:Label name="rules-step-1" text="1. Встаньте на танцевальную платформу" class="rules-step" />
+                    <ui:Label name="rules-step-2" text="2. Смотрите на верхний ТВ-экран" class="rules-step" />
+                    <ui:Label name="rules-step-3" text="3. Наступайте на стрелки точно в такт музыке" class="rules-step" />
+                    <ui:VisualElement class="goal-highlight">
+                        <ui:Label name="rules-goal-title" text="ЦЕЛЬ — ЧИТ-КОД ОТ ГОЛОДА:" class="goal-title" />
+                        <ui:Label name="rules-goal-text" text="НАБЕРИТЕ ОТ 65% ТОЧНОСТИ, ЧТОБЫ РАЗБЛОКИРОВАТЬ СЭНДВИЧ ИЗ КЛЕШНИ!" class="goal-text" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:Button name="btn-to-ready" class="action-btn">
+                    <ui:Label name="btn-to-ready-text" text="ПОНЯТНО, ДАЛЬШЕ ▶" class="action-btn-text" />
+                </ui:Button>
+            </ui:VisualElement>
+
+            <!-- PANEL 5: READY -->
+            <ui:VisualElement name="panel-ready" class="screen-panel panel-hidden">
+                <ui:Label name="ready-heading" text="ГОТОВЫ К ИГРЕ?" class="panel-heading" />
+                <ui:VisualElement class="arcade-card card-cyan" style="height: 220px;">
+                    <ui:VisualElement class="card-content">
+                        <ui:Label name="ready-track-name" text="Decadence" class="card-title" style="font-size: 54px;" />
+                        <ui:Label name="ready-artist-name" text="Disturbed  •  HARD  •  148 BPM" class="card-subtitle" style="font-size: 30px; color: #00f0ff;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:Button name="btn-start-game" class="action-btn" style="height: 140px; margin-top: 50px;">
+                    <ui:Label name="btn-start-game-text" text="НАЧАТЬ ИГРУ ▶" class="action-btn-text" style="font-size: 46px;" />
+                </ui:Button>
+            </ui:VisualElement>
+
+            <!-- PANEL 6: COUNTDOWN -->
+            <ui:VisualElement name="panel-countdown" class="screen-panel panel-hidden">
+                <ui:Label name="countdown-heading-1" text="ВСТАНЬТЕ НА ПЛАТФОРМУ" class="panel-heading" style="color: #ff007f;" />
+                <ui:Label name="countdown-heading-2" text="И СМОТРИТЕ НАВЕРХ!" class="panel-heading" />
+                <ui:Label name="countdown-number" text="3" class="big-score-text" style="font-size: 220px; color: #ffe600;" />
+            </ui:VisualElement>
+
+            <!-- PANEL 7: GAMEPLAY -->
+            <ui:VisualElement name="panel-gameplay" class="screen-panel panel-hidden">
+                <ui:Label name="gameplay-heading" text="ИДЁТ ИГРА" class="panel-heading" style="color: #00ff66;" />
+                <ui:Label name="gameplay-subheading" text="СМОТРИТЕ НА ВЕРХНИЙ ТВ-ЭКРАН!" class="panel-subheading" />
+                <ui:Button name="btn-test-win" class="action-btn" style="border-color: #00ff66;">
+                    <ui:Label name="btn-test-win-text" text="ТЕСТ: ПОБЕДА (>65%)" class="action-btn-text" />
+                </ui:Button>
+                <ui:Button name="btn-test-lose" class="action-btn" style="border-color: #ff007f; margin-top: 20px;">
+                    <ui:Label name="btn-test-lose-text" text="ТЕСТ: ПОРАЖЕНИЕ (&lt;65%)" class="action-btn-text" />
+                </ui:Button>
+            </ui:VisualElement>
+
+            <!-- PANEL 8: WIN -->
+            <ui:VisualElement name="panel-win" class="screen-panel panel-hidden">
+                <ui:Label name="win-heading" text="ПОБЕДА!" class="panel-heading" style="color: #00ff66; font-size: 64px;" />
+                <ui:Label name="win-subheading-1" text="ЧИТ-КОД АКТИВИРОВАН!" class="panel-subheading" style="color: #ffe600;" />
+                <ui:Label name="win-score-text" text="100%" class="big-score-text" />
+                <ui:Label name="win-subheading-2" text="КЛЕШНЯ АКТИВИРОВАНА — ЗАБЕРИТЕ СЭНДВИЧ!" class="panel-subheading" style="color: #ffffff;" />
+                <ui:Button name="btn-win-reset" class="action-btn">
+                    <ui:Label name="btn-win-reset-text" text="ЗАВЕРШИТЬ / COMPLETE" class="action-btn-text" />
+                </ui:Button>
+            </ui:VisualElement>
+
+            <!-- PANEL 9: LOSE -->
+            <ui:VisualElement name="panel-lose" class="screen-panel panel-hidden">
+                <ui:Label name="lose-heading" text="ПОЧТИ!" class="panel-heading" style="color: #ff007f; font-size: 64px;" />
+                <ui:Label name="lose-subheading" text="ДЛЯ ПОБЕДЫ НУЖНО БЫЛО ≥65%" class="panel-subheading" style="color: #ffffff;" />
+                <ui:Label name="lose-score-text" text="0%" class="big-score-text" style="color: #ff007f;" />
+                <ui:Button name="btn-lose-reset" class="action-btn">
+                    <ui:Label name="btn-lose-reset-text" text="ПОПРОБОВАТЬ СНОВА" class="action-btn-text" />
+                </ui:Button>
+            </ui:VisualElement>
+
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

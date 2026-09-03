@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <filter id="glowYellow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- Cheese Wedge -->
+  <path d="M35 145 L145 45 L170 135 Z" fill="none" stroke="#ffe600" stroke-width="8" stroke-linejoin="round" stroke-linecap="round" filter="url(#glowYellow)"/>
+  <!-- Cheese Holes -->
+  <circle cx="90" cy="120" r="14" fill="none" stroke="#ffe600" stroke-width="6"/>
+  <circle cx="135" cy="100" r="10" fill="none" stroke="#ffe600" stroke-width="6"/>
+  <circle cx="70" cy="135" r="7" fill="none" stroke="#ffe600" stroke-width="4"/>
+</svg>
