@@ -219,8 +219,8 @@ public class VibeArcadeGameUI : MonoBehaviour
         tabletRoot.Q<Button>("btn-start-game")?.RegisterCallback<ClickEvent>(evt => StartCountdown());
 
         // Test Triggers
-        tabletRoot.Q<Button>("btn-test-win")?.RegisterCallback<ClickEvent>(evt => GameEvents.RaiseWiinGame());
-        tabletRoot.Q<Button>("btn-test-lose")?.RegisterCallback<ClickEvent>(evt => GameEvents.RaiseLoseGame());
+        
+        
 
         // Reset Buttons
         tabletRoot.Q<Button>("btn-win-reset")?.RegisterCallback<ClickEvent>(evt => ResetToLanguageScreen());
@@ -348,6 +348,7 @@ public class VibeArcadeGameUI : MonoBehaviour
             // Gameplay Panel
             SetText("gameplay-heading", isEn ? "GAME IN PROGRESS" : "ИДЁТ ИГРА");
             SetText("gameplay-subheading", isEn ? "LOOK AT UPPER TV SCREEN!" : "СМОТРИТЕ НА ВЕРХНИЙ ТВ-ЭКРАН!");
+            SetText("gameplay-hint", isEn ? "STEP ON ARROWS TO THE BEAT!" : "НАСТУПАЙТЕ НА СТРЕЛКИ В ТАКТ МУЗЫКЕ!");
 
             // Win Panel
             SetText("win-heading", isEn ? "VICTORY!" : "ПОБЕДА!");

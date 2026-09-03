@@ -125,16 +125,16 @@
                 <ui:Label name="countdown-number" text="3" class="big-score-text" style="font-size: 220px; color: #ffe600;" />
             </ui:VisualElement>
 
-            <!-- PANEL 7: GAMEPLAY -->
-            <ui:VisualElement name="panel-gameplay" class="screen-panel panel-hidden">
-                <ui:Label name="gameplay-heading" text="ИДЁТ ИГРА" class="panel-heading" style="color: #00ff66;" />
-                <ui:Label name="gameplay-subheading" text="СМОТРИТЕ НА ВЕРХНИЙ ТВ-ЭКРАН!" class="panel-subheading" />
-                <ui:Button name="btn-test-win" class="action-btn" style="border-color: #00ff66;">
-                    <ui:Label name="btn-test-win-text" text="ТЕСТ: ПОБЕДА (>65%)" class="action-btn-text" />
-                </ui:Button>
-                <ui:Button name="btn-test-lose" class="action-btn" style="border-color: #ff007f; margin-top: 20px;">
-                    <ui:Label name="btn-test-lose-text" text="ТЕСТ: ПОРАЖЕНИЕ (&lt;65%)" class="action-btn-text" />
-                </ui:Button>
+                        <!-- PANEL 7: GAMEPLAY -->
+            <ui:VisualElement name="panel-gameplay" class="screen-panel panel-hidden" style="align-items: center; justify-content: center;">
+                <ui:Label name="gameplay-heading" text="ИДЁТ ИГРА" class="panel-heading" style="color: #00ff66; font-size: 64px; margin-bottom: 15px;" />
+                <ui:Label name="gameplay-subheading" text="СМОТРИТЕ НА ВЕРХНИЙ ТВ-ЭКРАН!" class="panel-subheading" style="color: #00f0ff; font-size: 32px; margin-bottom: 50px;" />
+                
+                <ui:VisualElement style="width: 280px; height: 280px; align-items: center; justify-content: center; margin-bottom: 50px;">
+                    <ui:Image style="width: 240px; height: 240px; background-image: url(&apos;project:/Assets/Art/Vectors/target_pad_neon.svg&apos;); -unity-background-scale-mode: scale-to-fit;" />
+                </ui:VisualElement>
+
+                <ui:Label name="gameplay-hint" text="НАСТУПАЙТЕ НА СТРЕЛКИ В ТАКТ МУЗЫКЕ!" class="panel-subheading" style="color: #ffe600; font-size: 28px;" />
             </ui:VisualElement>
 
             <!-- PANEL 8: WIN -->
