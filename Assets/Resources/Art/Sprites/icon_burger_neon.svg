@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <filter id="glowYellow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- Top Bun -->
+  <path d="M40 90 C40 50 65 30 100 30 C135 30 160 50 160 90 Z" fill="none" stroke="#ffe600" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" filter="url(#glowYellow)"/>
+  <!-- Sesame seeds -->
+  <circle cx="75" cy="60" r="3" fill="#ffe600"/>
+  <circle cx="100" cy="50" r="3" fill="#ffe600"/>
+  <circle cx="125" cy="62" r="3" fill="#ffe600"/>
+  <!-- Lettuce wavy -->
+  <path d="M35 105 C45 95 55 115 65 105 C75 95 85 115 95 105 C105 95 115 115 125 105 C135 95 145 115 155 105 C165 95 170 105 170 105" fill="none" stroke="#00ff66" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Patty -->
+  <rect x="42" y="120" width="116" height="16" rx="8" fill="#ffe600" stroke="#ffe600" stroke-width="4" filter="url(#glowYellow)"/>
+  <!-- Bottom Bun -->
+  <path d="M46 150 C46 168 70 175 100 175 C130 175 154 168 154 150 Z" fill="none" stroke="#ffe600" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" filter="url(#glowYellow)"/>
+</svg>

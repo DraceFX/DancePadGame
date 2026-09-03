@@ -219,8 +219,8 @@ public class VibeArcadeGameUI : MonoBehaviour
         tabletRoot.Q<Button>("btn-start-game")?.RegisterCallback<ClickEvent>(evt => StartCountdown());
 
         // Test Triggers
-        
-        
+
+
 
         // Reset Buttons
         tabletRoot.Q<Button>("btn-win-reset")?.RegisterCallback<ClickEvent>(evt => ResetToLanguageScreen());
@@ -261,7 +261,7 @@ public class VibeArcadeGameUI : MonoBehaviour
             Image arrow = new Image();
             arrow.AddToClassList("arrow-icon");
             arrow.style.backgroundImage = new StyleBackground(
-                UnityEditor.AssetDatabase.LoadAssetAtPath<VectorImage>("Assets/Art/Vectors/icon_play_arrow.svg")
+                Resources.Load<VectorImage>("Art/Vectors/icon_play_arrow.svg")
             );
             card.Add(arrow);
 
@@ -383,6 +383,29 @@ public class VibeArcadeGameUI : MonoBehaviour
         selectedDifficulty = diff;
         UpdateReadyScreen();
         ShowPanel(panelRules);
+        // selectedDifficulty = diff;
+        // UpdateReadyScreen();
+
+        // if (selectedSongIndex >= 0 && selectedSongIndex < loadedSongs.Count)
+        // {
+        //     SongInfo song = loadedSongs[selectedSongIndex];
+        //     string difficultySuffix = GetDifficultySuffix(diff);
+        //     string fullChartId = song.songId + difficultySuffix;
+        //     GameEvents.RiseSelectChart(fullChartId);
+        // }
+
+        // ShowPanel(panelRules);
+    }
+
+    private string GetDifficultySuffix(string diff)
+    {
+        switch (diff.ToUpperInvariant())
+        {
+            case "EASY": return "_easy";
+            case "MEDIUM": return "_medium";
+            case "HARD": return "_hard";
+            default: return null;
+        }
     }
 
     private void UpdateReadyScreen()
@@ -406,6 +429,10 @@ public class VibeArcadeGameUI : MonoBehaviour
         GameEvents.RiseSelectChart(song.songId);
         UpdateReadyScreen();
         ShowPanel(panelDifficulty);
+        // if (index < 0 || index >= loadedSongs.Count) return;
+
+        // selectedSongIndex = index;
+        // ShowPanel(panelDifficulty);
     }
 
     public void StartCountdown()

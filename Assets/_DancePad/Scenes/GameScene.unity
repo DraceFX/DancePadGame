@@ -496,6 +496,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SelectChart
   chartId: shotgun
+  difficultyButtons: []
 --- !u!114 &130188771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1188,6 +1189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SelectChart
   chartId: decadence
+  difficultyButtons: []
 --- !u!1 &213306032
 GameObject:
   m_ObjectHideFlags: 0
@@ -8448,6 +8450,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::VibeArcadeGameUI
   tabletDocument: {fileID: 142491054}
   tvDocument: {fileID: 120096166}
+  accuracyManager: {fileID: 0}
+  currentLanguage: ru
 --- !u!4 &609801305
 Transform:
   m_ObjectHideFlags: 0
@@ -9141,6 +9145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SelectChart
   chartId: phonk
+  difficultyButtons: []
 --- !u!114 &719048930
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12368,6 +12373,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SelectChart
   chartId: glitch
+  difficultyButtons: []
 --- !u!114 &1256153644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15335,6 +15341,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SelectChart
   chartId: jackpot
+  difficultyButtons: []
 --- !u!114 &1631227243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18014,6 +18021,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SelectChart
   chartId: decadence
+  difficultyButtons: []
 --- !u!114 &1918700107
 MonoBehaviour:
   m_ObjectHideFlags: 0
