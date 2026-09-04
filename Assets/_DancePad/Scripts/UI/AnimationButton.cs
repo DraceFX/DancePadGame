@@ -21,12 +21,12 @@ public class AnimationButton : MonoBehaviour
 
     private void OnEnable()
     {
-        GameEvents.OnDancePadPressAccepted += HandleDancePadPressed;
+        GameEvents.OnDancePadPressed += HandleDancePadPressed;
     }
 
     private void OnDisable()
     {
-        GameEvents.OnDancePadPressAccepted -= HandleDancePadPressed;
+        GameEvents.OnDancePadPressed -= HandleDancePadPressed;
         if (sequence != null)
         {
             sequence.Kill();

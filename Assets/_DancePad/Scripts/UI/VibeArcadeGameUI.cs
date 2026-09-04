@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEngine.Localization;
 using UnityEngine.Localization.Settings;
+using TMPro;
 
 [Serializable]
 public class SongInfo
@@ -24,6 +25,7 @@ public class VibeArcadeGameUI : MonoBehaviour
     [SerializeField] private UIDocument tabletDocument;
     [SerializeField] private UIDocument tvDocument;
     [SerializeField] private AccuracyManager accuracyManager;
+    [SerializeField] private TMP_Text titleText;
 
     // Tablet Visual Elements
     private VisualElement tabletRoot;
@@ -418,6 +420,11 @@ public class VibeArcadeGameUI : MonoBehaviour
             if (readyTrackLabel != null) readyTrackLabel.text = song.title;
             if (readyArtistLabel != null) readyArtistLabel.text = $"{song.artist}  •  {selectedDifficulty}  •  {song.bpm} BPM";
             if (tvSongLabel != null) tvSongLabel.text = $"{song.title} — {song.artist}";
+
+            if (titleText != null)
+            {
+                titleText.text = $"{song.artist} — {song.title}";
+            }
         }
     }
 
@@ -430,7 +437,7 @@ public class VibeArcadeGameUI : MonoBehaviour
 
         GameEvents.RiseSelectChart(song.songId);
         UpdateReadyScreen();
-        ShowPanel(panelDifficulty);
+        ShowPanel(panelRules);
         // if (index < 0 || index >= loadedSongs.Count) return;
 
         // selectedSongIndex = index;

@@ -7,7 +7,7 @@ public class RhythmNoteView : MonoBehaviour
 {
     [Header("Components")]
     [SerializeField] private Image image;
-    [SerializeField] private Image backgroundImage;
+    [SerializeField] private UISpriteAnimation animationSprite;
 
     [Header("Hit Effect Settings")]
     [SerializeField] private float hitPunchScale = 1.2f;
@@ -53,6 +53,8 @@ public class RhythmNoteView : MonoBehaviour
         double spawnTime = note.Time - spawnLeadTime;
         float delay = Mathf.Max(0f, (float)(spawnTime - currentTime));
 
+        animationSprite.PlayUIAnimation();
+
         moveTween = transform.DOMove(targetPosition, (float)spawnLeadTime).SetDelay(delay).SetEase(Ease.Linear);
     }
 
@@ -66,14 +68,14 @@ public class RhythmNoteView : MonoBehaviour
 
         float angle = direction switch
         {
-            DancePadDirection.Up => 90f,
-            DancePadDirection.UpRight => 45f,
-            DancePadDirection.Right => 0f,
-            DancePadDirection.DownRight => -45f,
-            DancePadDirection.Down => -90f,
-            DancePadDirection.DownLeft => -135f,
-            DancePadDirection.Left => 180f,
-            DancePadDirection.UpLeft => 135f,
+            DancePadDirection.Up => 0f,
+            DancePadDirection.UpRight => -45f,
+            DancePadDirection.Right => -90f,
+            DancePadDirection.DownRight => -135f,
+            DancePadDirection.Down => 180f,
+            DancePadDirection.DownLeft => 135f,
+            DancePadDirection.Left => 90f,
+            DancePadDirection.UpLeft => 45f,
             _ => 0f
         };
         image.rectTransform.localRotation = Quaternion.Euler(0, 0, angle);
@@ -102,12 +104,6 @@ public class RhythmNoteView : MonoBehaviour
         effectSequence.Join(image.DOColor(color, hitDuration * 0.5f));
         effectSequence.Join(image.DOFade(0f, hitDuration * 0.5f));
 
-        if (backgroundImage != null)
-        {
-            effectSequence.Join(backgroundImage.DOColor(color, hitDuration * 0.5f));
-            effectSequence.Join(backgroundImage.DOFade(0f, hitDuration * 0.5f));
-        }
-
         effectSequence.OnComplete(() =>
         {
             ResetView();
@@ -127,12 +123,6 @@ public class RhythmNoteView : MonoBehaviour
         effectSequence.Append(transform.DOShakePosition(missDuration, missShakeStrength, 20, 90, false, true));
         effectSequence.Join(image.DOColor(missColor, missDuration * 0.5f));
         effectSequence.Join(image.DOFade(0f, missDuration * 0.5f));
-
-        if (backgroundImage != null)
-        {
-            effectSequence.Join(backgroundImage.DOColor(missColor, missDuration * 0.5f));
-            effectSequence.Join(backgroundImage.DOFade(0f, missDuration * 0.5f));
-        }
 
         effectSequence.OnComplete(() =>
         {
@@ -155,11 +145,8 @@ public class RhythmNoteView : MonoBehaviour
             image.rectTransform.localRotation = Quaternion.identity;
             image.color = Color.white;
         }
-        if (backgroundImage != null)
-        {
-            backgroundImage.color = Color.white;
-        }
 
+        animationSprite.StopUIAnimation();
         gameObject.SetActive(false);
     }
 
