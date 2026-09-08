@@ -39,6 +39,8 @@ public class RhythmManager : MonoBehaviour
 
         double currentTime = clock.SongTime;
 
+        ProcessHitPrompts(currentTime);
+
         ProcessMisses(currentTime);
         ProcessSpawing(currentTime);
     }
@@ -47,15 +49,17 @@ public class RhythmManager : MonoBehaviour
     {
         foreach (var note in notes)
         {
-            if (note.State == RhythmNoteState.Hit || note.State == RhythmNoteState.Missed) continue;
+            if (note.State == RhythmNoteState.Hit || note.State == RhythmNoteState.Missed)
+                continue;
 
-            if (currentTime >= note.Time && !note.HitPromptSent)
+            // Событие сработает, когда до времени ноты осталось hitPromptLeadSeconds или меньше
+            if (currentTime >= note.Time - judgementSettings.BadWindow /1000f && !note.HitPromptSent)
             {
                 note.HitPromptSent = true;
                 GameEvents.RaiseNoteHitTimeReached(note.Direction);
             }
         }
-    }
+        }
 
     private void ProcessMisses(double currentTime)
     {

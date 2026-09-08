@@ -211,30 +211,8 @@ MonoBehaviour:
   direction: 0
   punchScale: 1.2
   duration: 0.07
-  animationCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
+  pressCurve: 18
+  releaseCurve: 27
 --- !u!1 &140644561
 GameObject:
   m_ObjectHideFlags: 0
@@ -370,30 +348,8 @@ MonoBehaviour:
   direction: 6
   punchScale: 1.2
   duration: 0.07
-  animationCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
+  pressCurve: 18
+  releaseCurve: 27
 --- !u!1 &201029449
 GameObject:
   m_ObjectHideFlags: 0
@@ -1197,30 +1153,8 @@ MonoBehaviour:
   direction: 3
   punchScale: 1.2
   duration: 0.07
-  animationCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
+  pressCurve: 18
+  releaseCurve: 27
 --- !u!1 &732294864
 GameObject:
   m_ObjectHideFlags: 0
@@ -1662,30 +1596,8 @@ MonoBehaviour:
   direction: 5
   punchScale: 1.2
   duration: 0.07
-  animationCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
+  pressCurve: 18
+  releaseCurve: 27
 --- !u!1 &882430287
 GameObject:
   m_ObjectHideFlags: 0
@@ -1778,30 +1690,8 @@ MonoBehaviour:
   direction: 1
   punchScale: 1.2
   duration: 0.07
-  animationCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
+  pressCurve: 18
+  releaseCurve: 27
 --- !u!1 &962238562
 GameObject:
   m_ObjectHideFlags: 0
@@ -2686,30 +2576,8 @@ MonoBehaviour:
   direction: 7
   punchScale: 1.2
   duration: 0.07
-  animationCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
+  pressCurve: 18
+  releaseCurve: 27
 --- !u!1 &1559596754
 GameObject:
   m_ObjectHideFlags: 0
@@ -3016,30 +2884,8 @@ MonoBehaviour:
   direction: 4
   punchScale: 1.2
   duration: 0.07
-  animationCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
+  pressCurve: 18
+  releaseCurve: 27
 --- !u!1 &1659468810
 GameObject:
   m_ObjectHideFlags: 0
@@ -3282,12 +3128,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 766a8911ca450454b86a46dccdfc70e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChartGenerator
-  music: {fileID: 8300000, guid: 7ed0ecb7cd9bb2d4282fbdb048c383fd, type: 3}
-  songId: glitch
-  title: 1
-  artist: 2
-  bpm: 160
-  offset: 11.5
+  music: {fileID: 8300000, guid: ab9522b700ae2084f9c09026b4fa911a, type: 3}
+  songId: Ultraclub
+  title: Ultraclub 90
+  artist: Rhythm of the Night
+  bpm: 90
+  offset: 0.5
   beatDivision: 4
   fftSize: 1024
   analysisWindow: 0.05
@@ -3295,11 +3141,12 @@ MonoBehaviour:
   maxFrequency: 16000
   sensitivity: 0.12
   peakWindow: 0.05
-  minimumNoteDistance: 0.1
+  minimumNoteDistance: 0.5
   lowFluxNoteChance: 0.2
   mediumFluxNoteChance: 0.6
   highFluxNoteChance: 1
   generateOnStart: 0
+  directions: 0000000001000000020000000300000004000000050000000600000007000000
   overwriteExisting: 1
 --- !u!4 &1797824520
 Transform:
@@ -3620,30 +3467,8 @@ MonoBehaviour:
   direction: 2
   punchScale: 1.2
   duration: 0.07
-  animationCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
+  pressCurve: 18
+  releaseCurve: 27
 --- !u!1 &1965708438
 GameObject:
   m_ObjectHideFlags: 0

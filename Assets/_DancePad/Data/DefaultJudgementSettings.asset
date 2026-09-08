@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fd086ea86ecee142b13645b7abcadd1, type: 3}
   m_Name: DefaultJudgementSettings
   m_EditorClassIdentifier: Assembly-CSharp::RhythmJudgementSettings
-  PerfectWindow: 100
-  GoodWindow: 150
-  BadWindow: 250
+  PerfectWindow: 200
+  GoodWindow: 250
+  BadWindow: 500

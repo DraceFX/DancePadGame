@@ -1,0 +1,254 @@
+{
+    "songId": "Lube",
+    "title": "Любэ",
+    "artist": "За тебя, Родина мать",
+    "bpm": 116.0,
+    "offset": 2.0,
+    "notes": [
+        {
+            "beat": 0.0,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 3.25,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 6.5,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 9.5,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 12.5,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 15.5,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 18.5,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 23.25,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 26.75,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 30.0,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 33.0,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 36.5,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 40.0,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 43.0,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 48.0,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 51.5,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 54.75,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 61.25,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 66.25,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 72.75,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 81.5,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 84.75,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 91.5,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 97.0,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 101.25,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 108.75,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 111.75,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 115.5,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 120.5,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 126.25,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 132.0,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 135.5,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 138.5,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 143.5,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 146.5,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 149.5,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 152.5,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 155.5,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 158.75,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 162.0,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 166.5,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 169.5,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 173.0,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 176.0,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 179.25,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 182.25,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 185.5,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 189.25,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 200.25,
+            "direction": "Down",
+            "type": "Tap"
+        }
+    ]
+}
