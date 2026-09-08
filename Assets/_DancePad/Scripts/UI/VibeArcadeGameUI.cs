@@ -26,6 +26,9 @@ public class VibeArcadeGameUI : MonoBehaviour
     [SerializeField] private UIDocument tvDocument;
     [SerializeField] private AccuracyManager accuracyManager;
     [SerializeField] private TMP_Text titleText;
+    [SerializeField] private GameObject videoCanvas;
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip backgroundMusic;
 
     // Tablet Visual Elements
     private VisualElement tabletRoot;
@@ -452,6 +455,11 @@ public class VibeArcadeGameUI : MonoBehaviour
 
     private IEnumerator CountdownRoutine()
     {
+        videoCanvas.SetActive(false);
+        audioSource.clip = null;
+        audioSource.loop = false;
+        audioSource.playOnAwake = false;
+
         if (countdownLabel != null) countdownLabel.text = "3";
         yield return new WaitForSeconds(1.0f);
         if (countdownLabel != null) countdownLabel.text = "2";
@@ -495,6 +503,12 @@ public class VibeArcadeGameUI : MonoBehaviour
 
     private void HandleWinGame()
     {
+        videoCanvas.SetActive(true);
+        audioSource.clip = backgroundMusic;
+        audioSource.loop = true;
+        audioSource.playOnAwake = true;
+        audioSource.Play();
+
         if (accuracyManager != null) currentScore = accuracyManager.Accuracy;
         if (winScoreLabel != null) winScoreLabel.text = $"{currentScore}%";
         ShowPanel(panelWin);
@@ -502,6 +516,12 @@ public class VibeArcadeGameUI : MonoBehaviour
 
     private void HandleLoseGame()
     {
+        videoCanvas.SetActive(true);
+        audioSource.clip = backgroundMusic;
+        audioSource.loop = true;
+        audioSource.playOnAwake = true;
+        audioSource.Play();
+
         if (accuracyManager != null) currentScore = accuracyManager.Accuracy;
         if (loseScoreLabel != null) loseScoreLabel.text = $"{currentScore}%";
         ShowPanel(panelLose);

@@ -8,6 +8,8 @@ public class RuntimeRhythmNote
     public RhythmNoteState State { get; set; }
     public RhythmNoteView View { get; set; }
 
+    public bool HitPromptSent { get; set; }
+
     public RuntimeRhythmNote(RhythmNoteData data, double time)
     {
         Direction = data.Direction;
@@ -16,11 +18,13 @@ public class RuntimeRhythmNote
 
         State = RhythmNoteState.Waiting;
         View = null;
+        HitPromptSent = false;
     }
 
     public void Reset()
     {
         State = RhythmNoteState.Waiting;
         View = null;
+        HitPromptSent = false;
     }
 }

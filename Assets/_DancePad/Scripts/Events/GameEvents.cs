@@ -11,6 +11,7 @@ public static class GameEvents
     public static event Action<string> OnSelectChart;
     public static event Action OnWinGame;
     public static event Action OnLoseGame;
+    public static event Action<DancePadDirection> OnNoteHitTimeReached;
 
     public static void RaiseDancePadPressed(DancePadDirection direction)
     {
@@ -55,5 +56,10 @@ public static class GameEvents
     public static void RaiseLoseGame()
     {
         OnLoseGame?.Invoke();
+    }
+
+    public static void RaiseNoteHitTimeReached(DancePadDirection direction)
+    {
+        OnNoteHitTimeReached?.Invoke(direction);
     }
 }

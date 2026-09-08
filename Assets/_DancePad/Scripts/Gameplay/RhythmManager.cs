@@ -43,6 +43,20 @@ public class RhythmManager : MonoBehaviour
         ProcessSpawing(currentTime);
     }
 
+    private void ProcessHitPrompts(double currentTime)
+    {
+        foreach (var note in notes)
+        {
+            if (note.State == RhythmNoteState.Hit || note.State == RhythmNoteState.Missed) continue;
+
+            if (currentTime >= note.Time && !note.HitPromptSent)
+            {
+                note.HitPromptSent = true;
+                GameEvents.RaiseNoteHitTimeReached(note.Direction);
+            }
+        }
+    }
+
     private void ProcessMisses(double currentTime)
     {
         foreach (RuntimeRhythmNote note in notes)
