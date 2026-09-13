@@ -1,0 +1,354 @@
+{
+    "songId": "Cream",
+    "title": "Плачу на техно",
+    "artist": "Cream Soda, Хлеб",
+    "bpm": 132.0,
+    "offset": 3.0,
+    "notes": [
+        {
+            "beat": 3.25,
+            "direction": "UpRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 4.75,
+            "direction": "DownRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 6.0,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 7.75,
+            "direction": "DownLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 9.75,
+            "direction": "DownRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 14.75,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 16.0,
+            "direction": "UpLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 17.75,
+            "direction": "DownRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 21.5,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 23.75,
+            "direction": "DownRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 25.0,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 26.25,
+            "direction": "UpRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 28.0,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 30.0,
+            "direction": "UpRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 32.25,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 33.75,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 37.5,
+            "direction": "UpLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 39.0,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 40.5,
+            "direction": "DownLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 41.75,
+            "direction": "DownRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 44.0,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 45.25,
+            "direction": "DownRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 47.25,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 48.75,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 50.25,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 52.0,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 53.25,
+            "direction": "DownLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 54.75,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 56.5,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 58.75,
+            "direction": "UpLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 60.0,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 61.75,
+            "direction": "UpRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 63.75,
+            "direction": "DownRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 66.25,
+            "direction": "DownLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 67.75,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 69.25,
+            "direction": "DownLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 70.75,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 72.5,
+            "direction": "UpRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 74.25,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 76.25,
+            "direction": "UpLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 78.25,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 80.75,
+            "direction": "UpRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 82.25,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 84.25,
+            "direction": "DownLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 86.25,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 88.25,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 89.75,
+            "direction": "DownRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 91.0,
+            "direction": "UpRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 92.75,
+            "direction": "UpLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 94.25,
+            "direction": "DownLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 95.75,
+            "direction": "DownRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 97.25,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 98.75,
+            "direction": "UpRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 100.75,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 102.25,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 103.75,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 105.25,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 106.75,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 108.25,
+            "direction": "UpLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 109.75,
+            "direction": "DownRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 111.25,
+            "direction": "UpRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 112.75,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 114.25,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 115.75,
+            "direction": "DownRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 117.25,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 118.75,
+            "direction": "UpRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 120.25,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 122.25,
+            "direction": "DownLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 127.75,
+            "direction": "Up",
+            "type": "Tap"
+        }
+    ]
+}

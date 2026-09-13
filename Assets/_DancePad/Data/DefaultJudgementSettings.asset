@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: DefaultJudgementSettings
   m_EditorClassIdentifier: Assembly-CSharp::RhythmJudgementSettings
   PerfectWindow: 200
-  GoodWindow: 250
-  BadWindow: 500
+  GoodWindow: 450
+  BadWindow: 1000

@@ -60,18 +60,24 @@ public class LighingController : MonoBehaviour
         _offCoroutines.Remove(relayIndex);
     }
 
+    [ContextMenu("Test Light")]
+    private void DebugLighting()
+    {
+
+    }
+
     private int GetRelayIndex(DancePadDirection direction)
     {
         switch (direction)
         {
+            case DancePadDirection.UpLeft: return 0;
             case DancePadDirection.Up: return 1;
-            case DancePadDirection.Down: return 2;
+            case DancePadDirection.UpRight: return 2;
             case DancePadDirection.Left: return 3;
             case DancePadDirection.Right: return 4;
-            case DancePadDirection.UpLeft: return 5;
-            case DancePadDirection.UpRight: return 6;
-            case DancePadDirection.DownLeft: return 7;
-            case DancePadDirection.DownRight: return 8;
+            case DancePadDirection.DownLeft: return 5;
+            case DancePadDirection.Down: return 6;
+            case DancePadDirection.DownRight: return 7;
             default: return -1;
         }
     }

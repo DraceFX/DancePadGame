@@ -1838,7 +1838,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: ab927a64e813a6246b26102a52245401, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.3
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3128,12 +3128,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 766a8911ca450454b86a46dccdfc70e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChartGenerator
-  music: {fileID: 8300000, guid: ab9522b700ae2084f9c09026b4fa911a, type: 3}
-  songId: Ultraclub
-  title: Ultraclub 90
-  artist: Rhythm of the Night
-  bpm: 90
-  offset: 0.5
+  music: {fileID: 8300000, guid: 99a105c474673e64f837ad886c887e5a, type: 3}
+  songId: Cream
+  title: "\u041F\u043B\u0430\u0447\u0443 \u043D\u0430 \u0442\u0435\u0445\u043D\u043E"
+  artist: "Cream Soda, \u0425\u043B\u0435\u0431"
+  bpm: 132
+  offset: 3
   beatDivision: 4
   fftSize: 1024
   analysisWindow: 0.05
