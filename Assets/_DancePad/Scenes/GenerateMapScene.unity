@@ -3128,12 +3128,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 766a8911ca450454b86a46dccdfc70e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChartGenerator
-  music: {fileID: 8300000, guid: ab9522b700ae2084f9c09026b4fa911a, type: 3}
-  songId: Ultraclub
-  title: Ultraclub 90
-  artist: Rhythm of the Night
-  bpm: 90
-  offset: 0.5
+  music: {fileID: 8300000, guid: 545f83ab1c116c847b4aae8c549826c9, type: 3}
+  songId: Toxis
+  title: "\u0417\u041D\u0410\u041A"
+  artist: "Toxi$, \u0414\u043E\u0440\u0430"
+  bpm: 150
+  offset: 1
   beatDivision: 4
   fftSize: 1024
   analysisWindow: 0.05
