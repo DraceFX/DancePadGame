@@ -4,24 +4,34 @@ using UnityEngine;
 
 public class GetSandwitch : MonoBehaviour
 {
-    [SerializeField] private string portName = "COM3"; // измените на свой порт
+    [SerializeField] private string portName = "COM3";
     [SerializeField] private int baudRate = 9600;
+    [SerializeField] private float reconnectInterval = 1f; // РёРЅС‚РµСЂРІР°Р» РїРѕРїС‹С‚РѕРє (СЃРµРє)
 
     private SerialPort serialPort;
+    private float reconnectTimer = 0f;
+    private bool wasConnected = false;
 
     private void Start()
     {
-        try
+        TryConnect();
+    }
+
+    private void Update()
+    {
+        // Р•СЃР»Рё РїРѕСЂС‚ РЅРµ РѕС‚РєСЂС‹С‚ вЂ“ РїС‹С‚Р°РµРјСЃСЏ РїРѕРґРєР»СЋС‡РёС‚СЊСЃСЏ СЂР°Р· РІ reconnectInterval СЃРµРєСѓРЅРґ
+        if (serialPort == null || !serialPort.IsOpen)
         {
-            serialPort = new SerialPort(portName, baudRate);
-            serialPort.Open();
-            serialPort.ReadTimeout = 10;
-            Debug.Log("Порт открыт.");
+            reconnectTimer += Time.deltaTime;
+            if (reconnectTimer >= reconnectInterval)
+            {
+                reconnectTimer = 0f;
+                TryConnect();
+            }
+            return;
         }
-        catch (System.Exception e)
-        {
-            Debug.LogError("Не удалось открыть порт: " + e.Message);
-        }
+
+        // (Р·РґРµСЃСЊ РѕСЃС‚Р°Р»СЊРЅР°СЏ Р»РѕРіРёРєР° С‡С‚РµРЅРёСЏ РґР°РЅРЅС‹С…, РµСЃР»Рё РїРѕСЂС‚ РѕС‚РєСЂС‹С‚)
     }
 
     private void OnEnable()
@@ -34,11 +44,62 @@ public class GetSandwitch : MonoBehaviour
         GameEvents.OnWinGame -= SetSandwich;
     }
 
+    private void TryConnect()
+    {
+        ClosePort(); // Р·Р°РєСЂС‹РІР°РµРј СЃС‚Р°СЂС‹Р№ РїРѕСЂС‚, РµСЃР»Рё РѕСЃС‚Р°Р»СЃСЏ
+
+        try
+        {
+            serialPort = new SerialPort(portName, baudRate);
+            serialPort.ReadTimeout = 10;
+            serialPort.Open();
+
+            if (!wasConnected)
+            {
+                Debug.Log("РџРѕСЂС‚ " + portName + " РѕС‚РєСЂС‹С‚.");
+                wasConnected = true;
+            }
+            else
+            {
+                Debug.Log("РџРѕСЂС‚ " + portName + " РїРµСЂРµРїРѕРґРєР»СЋС‡С‘РЅ.");
+            }
+        }
+        catch (System.Exception e)
+        {
+            if (wasConnected)
+            {
+                Debug.LogWarning("РџРѕСЂС‚ " + portName + " РЅРµРґРѕСЃС‚СѓРїРµРЅ: " + e.Message);
+                wasConnected = false;
+            }
+            serialPort = null;
+        }
+    }
+
+    private void ClosePort()
+    {
+        if (serialPort != null)
+        {
+            try
+            {
+                if (serialPort.IsOpen)
+                    serialPort.Close();
+                serialPort.Dispose();
+            }
+            catch { }
+            serialPort = null;
+        }
+    }
+
+    void OnDestroy()
+    {
+        ClosePort();
+    }
+
     public void SetSandwich()
     {
         if (serialPort == null || !serialPort.IsOpen)
         {
-            Debug.LogWarning("Последовательный порт не открыт.");
+            Debug.LogWarning("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ.");
             return;
         }
 
@@ -48,11 +109,11 @@ public class GetSandwitch : MonoBehaviour
         try
         {
             serialPort.Write(fullCommand);
-            Debug.Log("Отправлено: " + fullCommand.Trim());
+            Debug.Log("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: " + fullCommand.Trim());
         }
         catch (System.Exception e)
         {
-            Debug.LogError("Ошибка отправки: " + e.Message);
+            Debug.LogError("пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: " + e.Message);
         }
     }
 

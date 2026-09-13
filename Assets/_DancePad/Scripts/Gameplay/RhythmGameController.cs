@@ -45,24 +45,31 @@ public class RhythmGameController : MonoBehaviour
         chart = RhythmSongLoader.LoadChart(songId);
         if (chart == null)
         {
+#if UNITY_EDITOR
             Debug.LogError($"Failed to load song: {songId}");
+#endif
             yield break;
         }
-
+#if UNITY_EDITOR
         Debug.Log($"Loaded song: {chart.Title}");
         Debug.Log($"Artist: {chart.Artist}");
         Debug.Log($"BPM: {chart.BPM}");
         Debug.Log($"Notes: {chart.Notes.Count}");
+#endif
 
         string audioPath = RhythmSongLoader.FindAudioFile(songId);
 
         if (string.IsNullOrEmpty(audioPath))
         {
+#if UNITY_EDITOR
             Debug.LogError($"Audio file not found for: {songId}");
+#endif
             yield break;
         }
 
+#if UNITY_EDITOR
         Debug.Log($"Loading audio: {audioPath}");
+#endif
 
         yield return StartCoroutine(RhythmAudioLoader.Load(audioPath, OnAudioLoaded));
     }
@@ -71,7 +78,9 @@ public class RhythmGameController : MonoBehaviour
     {
         if (clip == null)
         {
+#if UNITY_EDITOR
             Debug.LogError($"Failed to load audio: {songId}");
+#endif
             return;
         }
 
@@ -91,19 +100,13 @@ public class RhythmGameController : MonoBehaviour
     private void CheckMusicFinished()
     {
         if (musicFinished) return;
-        if (!rhythmClock.IsRunning) return;
-
-        // Ждём, пока клип реально начнёт воспроизводиться
-        if (audioSource.time <= 0f) return;
-
-        // Если музыка ещё играет — выходим
-        if (audioSource.isPlaying) return;
-
-        // Музыка завершилась
         musicFinished = true;
-        audioSource.Stop(); // гарантируем остановку
+
+        audioSource.Stop();
         rhythmClock.Stop();
         GameEvents.RaiseMusicFinished();
+#if UNITY_EDITOR
         Debug.Log("Finish playing music!");
+#endif
     }
 }
