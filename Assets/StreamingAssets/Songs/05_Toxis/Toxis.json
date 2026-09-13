@@ -1,0 +1,544 @@
+{
+    "songId": "Toxis",
+    "title": "ЗНАК",
+    "artist": "Toxi$, Дора",
+    "bpm": 150.0,
+    "offset": 1.0,
+    "notes": [
+        {
+            "beat": 0.5,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 2.5,
+            "direction": "UpLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 3.75,
+            "direction": "DownLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 6.5,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 8.0,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 9.25,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 10.75,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 12.0,
+            "direction": "UpLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 14.0,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 15.25,
+            "direction": "UpLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 16.5,
+            "direction": "UpRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 18.25,
+            "direction": "DownRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 19.5,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 21.75,
+            "direction": "DownLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 23.5,
+            "direction": "UpLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 25.0,
+            "direction": "DownLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 27.5,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 29.0,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 30.5,
+            "direction": "UpLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 32.0,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 33.25,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 34.75,
+            "direction": "UpLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 36.5,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 38.0,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 39.25,
+            "direction": "DownRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 41.5,
+            "direction": "DownLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 43.5,
+            "direction": "UpLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 44.75,
+            "direction": "DownRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 46.0,
+            "direction": "UpLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 47.5,
+            "direction": "DownRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 48.75,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 50.25,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 51.5,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 53.0,
+            "direction": "UpRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 54.5,
+            "direction": "UpLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 56.5,
+            "direction": "DownRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 57.75,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 59.75,
+            "direction": "DownRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 61.0,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 62.5,
+            "direction": "UpLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 64.0,
+            "direction": "DownRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 65.25,
+            "direction": "UpRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 67.75,
+            "direction": "DownLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 69.25,
+            "direction": "UpRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 70.75,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 72.0,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 73.5,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 74.75,
+            "direction": "DownRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 76.25,
+            "direction": "DownLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 78.0,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 79.5,
+            "direction": "UpLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 80.75,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 83.0,
+            "direction": "UpRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 85.0,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 87.25,
+            "direction": "UpLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 89.75,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 91.0,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 92.5,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 93.75,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 96.75,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 98.0,
+            "direction": "DownRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 99.5,
+            "direction": "UpRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 101.25,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 102.75,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 104.0,
+            "direction": "UpRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 106.25,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 108.25,
+            "direction": "UpLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 110.25,
+            "direction": "DownRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 112.25,
+            "direction": "UpLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 113.5,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 115.75,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 117.25,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 118.5,
+            "direction": "DownLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 119.75,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 121.75,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 123.75,
+            "direction": "DownLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 125.25,
+            "direction": "DownRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 126.5,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 128.0,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 129.5,
+            "direction": "UpRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 131.75,
+            "direction": "UpLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 133.0,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 134.75,
+            "direction": "DownRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 136.0,
+            "direction": "UpLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 137.5,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 139.0,
+            "direction": "UpLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 140.25,
+            "direction": "DownRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 143.5,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 145.0,
+            "direction": "UpLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 146.25,
+            "direction": "Down",
+            "type": "Tap"
+        },
+        {
+            "beat": 147.5,
+            "direction": "UpLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 151.25,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 152.5,
+            "direction": "Up",
+            "type": "Tap"
+        },
+        {
+            "beat": 153.75,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 155.75,
+            "direction": "UpRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 158.0,
+            "direction": "DownLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 159.25,
+            "direction": "Right",
+            "type": "Tap"
+        },
+        {
+            "beat": 161.5,
+            "direction": "DownLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 162.75,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 164.75,
+            "direction": "DownLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 166.75,
+            "direction": "UpLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 168.25,
+            "direction": "DownRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 170.25,
+            "direction": "Left",
+            "type": "Tap"
+        },
+        {
+            "beat": 173.0,
+            "direction": "DownLeft",
+            "type": "Tap"
+        },
+        {
+            "beat": 174.5,
+            "direction": "UpRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 176.25,
+            "direction": "DownRight",
+            "type": "Tap"
+        },
+        {
+            "beat": 177.75,
+            "direction": "Down",
+            "type": "Tap"
+        }
+    ]
+}
