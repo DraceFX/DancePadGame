@@ -56,19 +56,25 @@ public class GetSandwitch : MonoBehaviour
 
             if (!wasConnected)
             {
+#if UNITY_EDITOR
                 Debug.Log("Порт " + portName + " открыт.");
+#endif
                 wasConnected = true;
             }
             else
             {
+#if UNITY_EDITOR
                 Debug.Log("Порт " + portName + " переподключён.");
+#endif
             }
         }
         catch (System.Exception e)
         {
             if (wasConnected)
             {
+#if UNITY_EDITOR
                 Debug.LogWarning("Порт " + portName + " недоступен: " + e.Message);
+#endif
                 wasConnected = false;
             }
             serialPort = null;
@@ -99,7 +105,9 @@ public class GetSandwitch : MonoBehaviour
     {
         if (serialPort == null || !serialPort.IsOpen)
         {
+#if UNITY_EDITOR
             Debug.LogWarning("���������������� ���� �� ������.");
+#endif
             return;
         }
 
@@ -109,11 +117,15 @@ public class GetSandwitch : MonoBehaviour
         try
         {
             serialPort.Write(fullCommand);
+#if UNITY_EDITOR
             Debug.Log("����������: " + fullCommand.Trim());
+#endif
         }
         catch (System.Exception e)
         {
+#if UNITY_EDITOR
             Debug.LogError("������ ��������: " + e.Message);
+#endif
         }
     }
 

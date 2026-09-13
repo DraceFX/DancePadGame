@@ -35,8 +35,7 @@ public class LighingController : MonoBehaviour
     private void OnPadDirectionPressed(DancePadDirection direction)
     {
         int relayIndex = GetRelayIndex(direction);
-        if (relayIndex == -1)
-            return;
+        if (relayIndex == -1) return;
 
         // Включаем реле
         _controller.SetRelay(relayIndex, true);
@@ -45,7 +44,9 @@ public class LighingController : MonoBehaviour
         if (_offCoroutines.TryGetValue(relayIndex, out var existingCoroutine))
         {
             if (existingCoroutine != null)
+            {
                 StopCoroutine(existingCoroutine);
+            }
         }
 
         // Запускаем новую корутину выключения
@@ -58,12 +59,6 @@ public class LighingController : MonoBehaviour
         yield return new WaitForSeconds(_offDelay);
         _controller.SetRelay(relayIndex, false);
         _offCoroutines.Remove(relayIndex);
-    }
-
-    [ContextMenu("Test Light")]
-    private void DebugLighting()
-    {
-
     }
 
     private int GetRelayIndex(DancePadDirection direction)

@@ -69,7 +69,9 @@ public class RhythmResultController : MonoBehaviour
             loseObject.SetActive(false);
         }
 
+#if UNITY_EDITOR
         Debug.Log("WIN!");
+#endif
         GameEvents.RaiseWiinGame();
     }
 
@@ -84,8 +86,9 @@ public class RhythmResultController : MonoBehaviour
         {
             loseObject.SetActive(true);
         }
-
+#if UNITY_EDITOR
         Debug.Log("LOSE!");
+#endif
         GameEvents.RaiseLoseGame();
     }
 }

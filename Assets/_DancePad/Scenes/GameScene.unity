@@ -16642,6 +16642,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RelayController
   portName: COM4
   baudRate: 9600
+  reconnectInterval: 1
 --- !u!114 &2142666486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16656,6 +16657,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GetSandwitch
   portName: COM5
   baudRate: 9600
+  reconnectInterval: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

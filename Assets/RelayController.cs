@@ -45,19 +45,25 @@ public class RelayController : MonoBehaviour
 
             if (!wasConnected)
             {
+#if UNITY_EDITOR
                 Debug.Log("Порт " + portName + " открыт.");
+#endif
                 wasConnected = true;
             }
             else
             {
+#if UNITY_EDITOR
                 Debug.Log("Порт " + portName + " переподключён.");
+#endif
             }
         }
         catch (System.Exception e)
         {
             if (wasConnected)
             {
+#if UNITY_EDITOR
                 Debug.LogWarning("Порт " + portName + " недоступен: " + e.Message);
+#endif
                 wasConnected = false;
             }
             serialPort = null;
@@ -100,13 +106,17 @@ public class RelayController : MonoBehaviour
     {
         if (relayIndex < 0 || relayIndex > 7)
         {
+#if UNITY_EDITOR
             Debug.LogWarning("Индекс реле должен быть от 0 до 7.");
+#endif
             return;
         }
 
         if (serialPort == null || !serialPort.IsOpen)
         {
+#if UNITY_EDITOR
             Debug.LogWarning("Последовательный порт не открыт.");
+#endif
             return;
         }
 
@@ -116,11 +126,15 @@ public class RelayController : MonoBehaviour
         try
         {
             serialPort.Write(fullCommand);
+#if UNITY_EDITOR
             Debug.Log("Отправлено: " + fullCommand.Trim());
+#endif
         }
         catch (System.Exception e)
         {
+#if UNITY_EDITOR
             Debug.LogError("Ошибка отправки: " + e.Message);
+#endif
         }
     }
 }

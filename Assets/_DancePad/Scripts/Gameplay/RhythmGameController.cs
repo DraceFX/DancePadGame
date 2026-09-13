@@ -12,31 +12,42 @@ public class RhythmGameController : MonoBehaviour
     [SerializeField] private string songId = "decadence";
 
     private RhythmChartData chart;
-
     private bool musicFinished;
-
-    private void Update()
-    {
-        CheckMusicFinished();
-    }
+    private Coroutine _finishWatcher;
+    private System.Action<string> _onSelectChart;
 
     private void OnEnable()
     {
+        _onSelectChart = (o) => songId = o;
         GameEvents.OnStartPlay += StartGame;
-        GameEvents.OnSelectChart += (o) => songId = o;
+        GameEvents.OnSelectChart += _onSelectChart;
     }
 
     private void OnDisable()
     {
         GameEvents.OnStartPlay -= StartGame;
-        GameEvents.OnSelectChart -= (o) => songId = o;
+        GameEvents.OnSelectChart -= _onSelectChart;
+
+        if (_finishWatcher != null)
+        {
+            StopCoroutine(_finishWatcher);
+            _finishWatcher = null;
+        }
     }
 
     [ContextMenu("Start Game")]
     public void StartGame()
     {
         audioSource.Stop();
+        rhythmClock.Stop();
         musicFinished = false;
+
+        if (_finishWatcher != null)
+        {
+            StopCoroutine(_finishWatcher);
+            _finishWatcher = null;
+        }
+
         StartCoroutine(LoadSong());
     }
 
@@ -50,15 +61,8 @@ public class RhythmGameController : MonoBehaviour
 #endif
             yield break;
         }
-#if UNITY_EDITOR
-        Debug.Log($"Loaded song: {chart.Title}");
-        Debug.Log($"Artist: {chart.Artist}");
-        Debug.Log($"BPM: {chart.BPM}");
-        Debug.Log($"Notes: {chart.Notes.Count}");
-#endif
 
         string audioPath = RhythmSongLoader.FindAudioFile(songId);
-
         if (string.IsNullOrEmpty(audioPath))
         {
 #if UNITY_EDITOR
@@ -66,10 +70,6 @@ public class RhythmGameController : MonoBehaviour
 #endif
             yield break;
         }
-
-#if UNITY_EDITOR
-        Debug.Log($"Loading audio: {audioPath}");
-#endif
 
         yield return StartCoroutine(RhythmAudioLoader.Load(audioPath, OnAudioLoaded));
     }
@@ -95,9 +95,33 @@ public class RhythmGameController : MonoBehaviour
         double startDspTime = AudioSettings.dspTime + 0.1;
         audioSource.PlayScheduled(startDspTime);
         rhythmClock.StartAt(startDspTime);
+
+        if (_finishWatcher != null)
+        {
+            StopCoroutine(_finishWatcher);
+        }
+        _finishWatcher = StartCoroutine(WaitForSongEnd(startDspTime));
     }
 
-    private void CheckMusicFinished()
+    private IEnumerator WaitForSongEnd(double startDspTime)
+    {
+        if (audioSource.clip == null)
+        {
+#if UNITY_EDITOR
+            Debug.LogError("Clip is null in WaitForSongEnd");
+#endif
+            yield break;
+        }
+
+        while (AudioSettings.dspTime < startDspTime) yield return null;
+
+        double endDspTime = startDspTime + audioSource.clip.length;
+        while (AudioSettings.dspTime < endDspTime) yield return null;
+
+        FinishSong();
+    }
+
+    private void FinishSong()
     {
         if (musicFinished) return;
         musicFinished = true;
@@ -105,6 +129,7 @@ public class RhythmGameController : MonoBehaviour
         audioSource.Stop();
         rhythmClock.Stop();
         GameEvents.RaiseMusicFinished();
+
 #if UNITY_EDITOR
         Debug.Log("Finish playing music!");
 #endif
